@@ -1,14 +1,19 @@
 <template>
   <div class="navbar--wrapper">
-    <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="#">NavBar</b-navbar-brand>
+    <b-navbar toggleable="lg">
+      <b-navbar-brand href="#">
+        <img src="../../../src/assets/logo-text.svg" alt="logo-text"
+      /></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Link</b-nav-item>
-          <b-nav-item href="#" disabled>Disabled</b-nav-item>
+          <b-nav-item href="#" class="my-auto"> Trang chủ </b-nav-item>
+          <b-nav-item href="#" class="my-auto">Tính năng</b-nav-item>
+          <b-nav-item href="#" class="my-auto">Đối tượng sử dụng</b-nav-item>
+          <b-nav-item href="#" class="my-auto">Q&A</b-nav-item>
+          <b-nav-item href="#" class="my-auto">Thông tin liên hệ</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -53,7 +58,8 @@ export default {
 
 <style>
 .navbar--wrapper {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
+  height: 80px;
 }
 </style>

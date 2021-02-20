@@ -1,9 +1,6 @@
 <template>
-  <div class="nav--btn">
-    <button
-      class="btn--common btn--navbar btn--navbar--slide btn--navbar--circleBlur"
-      ripple="ripple"
-    >
+  <div>
+    <button class="btn--common btn--navbar btn--navbar--slide" ripple="ripple">
       Thử Ngay <em class="fas fa-download" style="padding-left: 12px"></em>
     </button>
   </div>
@@ -18,6 +15,8 @@ export default {
 <style>
 @import url("../../../assets/home/common.css");
 @import url("../../../assets/home/animation/Nav-btn.css");
+
+
 
 .btn--navbar {
   height: 50px;

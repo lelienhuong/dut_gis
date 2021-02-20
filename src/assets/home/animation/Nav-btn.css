@@ -45,20 +45,9 @@
   width: 100%;
 }
 
-.btn--navbar--circleBlur span {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  border-radius: 50%;
-  background-color: white;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  animation: zoom 1s infinite;
-}
-
 [ripple] .ripple--container .ripple--body {
-    opacity: 0.03 !important;
-    background-color: white !important;
-    -webkit-animation: rippler 100ms;
-    animation: rippler 100ms;
-  }
+  opacity: 0.03 !important;
+  background-color: white !important;
+  -webkit-animation: rippler 100ms;
+  animation: rippler 100ms;
+}

@@ -1,13 +1,18 @@
 <template>
   <div class="navbar--wrapper">
-    <b-navbar toggleable="lg" style="width:100%;">
+    <b-navbar
+      toggleable="lg"
+      type="dark"
+      variant="dark"
+      class="py-2 navbar--custom"
+    >
       <b-navbar-brand href="#" class="navbar--logo">
         <img src="../../../assets/logo-text.svg" alt="logo-text" />
       </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse" ></b-navbar-toggle>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <b-collapse class="ml_360" id="nav-collapse" is-nav>
+      <b-collapse class="ml_450" id="nav-collapse" is-nav>
         <b-navbar-nav class="navbar--underline navbar--text">
           <b-nav-item href="#" class="my-auto"> Trang chủ </b-nav-item>
           <b-nav-item href="#" class="my-auto">Tính năng</b-nav-item>
@@ -36,38 +41,95 @@ export default {
 <style>
 @import url("../../../assets/home/animation/Nav-underline.css");
 
+.navbar {
+  width: 100%;
+}
 
 .navbar-nav a {
   position: relative;
 }
-.navbar-nav li{
+.navbar-nav li {
   margin-left: 14px;
 }
-.nav-item {
-  display: flex;
-  /* align-items: center !important; */
+.navbar-dark .navbar-nav .nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3e3e3e !important;
 }
-.ml_360{
-  margin-left: 228px;
+
+.navbar.navbar-dark.bg-dark {
+  background-color: white !important;
+  color: black;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(61, 61, 105, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+}
+.navbar-toggler {
+  border-color: rgb(61, 61, 105) !important;
+}
+
+.ml_450 {
+  margin-left: 450px;
 }
 
 .navbar--wrapper {
+  position: absolute;
   width: 100%;
-  height: 70px;
   background: #ffffff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1300;
   display: flex;
   align-items: center;
-  position: absolute;
 }
 .navbar--logo {
-  margin-left: 107px;
+  margin-left: 180px;
 }
-.navbar--text {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  color: #3e3e3e !important;
+
+.navbar--custom {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1399.98px) {
+  .navbar--logo {
+    margin-left: 90px;
+  }
+  .ml_450 {
+    margin-left: 245px;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .navbar--logo {
+    margin-left: 0px;
+  }
+  .ml_450 {
+    margin-left: 70px;
+  }
+  .navbar-nav li {
+    margin-left: 0px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .ml_450 {
+    margin-left: 45px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 410.98px) {
+}
+
+@media (max-width: 321px) {
 }
 </style>

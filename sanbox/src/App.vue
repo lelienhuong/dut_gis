@@ -1,19 +1,20 @@
 <template>
   <div id="app" style="position: relative">
-    <Navbar style="position:absolute" />
-    <Helloworld />
+    <Navbar />
+    <Concac />
   </div>
 </template>
 
 <script>
 // import Navbar from "../../src/components/home/components/Navbar.vue";
 import Navbar from "./components/navbar.vue";
-import Helloworld from "./components/HelloWorld.vue";
+
+import Concac from "./components/concac.vue";
 export default {
   name: "App",
   components: {
-    Helloworld,
     Navbar,
+    Concac,
   },
 };
 </script>

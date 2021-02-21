@@ -64,8 +64,8 @@ export default {
   display: flex;
 }
 .home--content {
-  width: 50%;
-  padding: 100px 0px 0px 215px;
+  width: 45%;
+  padding: 100px 0px 0px 123px;
 }
 
 .home--title {
@@ -78,7 +78,7 @@ export default {
 }
 
 .home--text {
-  width: 80%;
+  width: 90%;
   font-size: 20px;
   line-height: 27px;
   margin-top: 50px;
@@ -94,7 +94,7 @@ export default {
 
 @media (max-width: 1399.98px) {
   .home--content {
-    padding: 90px 0px 0px 123px;
+    padding: 60px 0px 0px 123px;
   }
   .home--text {
     width: 100%;
@@ -106,12 +106,17 @@ export default {
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .home--content--wrapper {
+    justify-content: space-between;
+  }
   .home--content {
+    width: 50%;
     padding: 55px 0px 0px 25px;
   }
   .home--image {
     width: 480px;
     margin-left: 0px;
+    margin-right: 20px;
   }
 }
 

@@ -122,7 +122,12 @@
                 alt="Đức Huy"
               />
               <p class="member__name">Nguyễn Hữu Đức Huy</p>
-              <p class="member__name department--name">a.k.a Trùm-Cuối</p>
+              <p
+                class="member__name department--name"
+                style="margin-top: -15px"
+              >
+                a.k.a Trùm-Cuối
+              </p>
             </b-col>
           </b-row>
         </template>
@@ -169,7 +174,7 @@ export default {
 
 <style>
 .carousel-item {
-  height: 306px;
+  height: 290px;
 }
 .row {
   height: 100%;

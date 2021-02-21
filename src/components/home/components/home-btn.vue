@@ -44,7 +44,7 @@ a {
 
 .home--btn--wrapper {
   /* width: 100%; */
-  margin-top: 135px;
+  margin-top: 100px;
 }
 
 .btn--home {
@@ -58,7 +58,7 @@ a {
 #btn--try {
   color: white;
   background-color: #0b66bf;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 #btn--discover {
   margin-left: 25px;
@@ -68,7 +68,7 @@ a {
 
 @media (max-width: 1399.98px) {
   .home--btn--wrapper {
-    margin-top: 75px;
+    margin-top: 50px;
   }
   #btn--try {
     margin-left: 50px;
@@ -105,5 +105,16 @@ a {
 }
 
 @media (max-width: 321px) {
+  .home--btn--wrapper{
+    flex-direction: column;
+  }
+  .home--btn--wrapper a{
+    display: flex;
+    justify-content: center;
+  }
+  #btn--discover{
+    margin-left: 0px;
+    margin-top: 20px;
+  }
 }
 </style>

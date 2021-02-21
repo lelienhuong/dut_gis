@@ -3,9 +3,9 @@
     <Home />
     <!-- <Features />
     <Users /> -->
-    <Members />
-    <Questions />
-    <Footer />
+    <!-- <Members /> -->
+    <!-- <Questions /> -->
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -13,9 +13,9 @@
 import Home from "./components/home/Home.vue";
 // import Features from "./components/Features.vue";
 // import Users from "./components/Users.vue";
-import Members from "./components/members/Members.vue";
-import Questions from "./components/Questions.vue";
-import Footer from "./components/Footer.vue";
+// import Members from "./components/members/Members.vue";
+// import Questions from "./components/Questions.vue";
+// import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -23,9 +23,9 @@ export default {
     Home,
     // Features,
     // Users,
-    Members,
-    Questions,
-    Footer,
+    // Members,
+    // Questions,
+    // Footer,
   },
 };
 </script>

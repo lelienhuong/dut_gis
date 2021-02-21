@@ -70,7 +70,7 @@ export default {
 }
 
 .ml_450 {
-  margin-left: 450px;
+  margin-left: 350px;
 }
 
 .navbar--wrapper {
@@ -83,7 +83,7 @@ export default {
   align-items: center;
 }
 .navbar--logo {
-  margin-left: 180px;
+  margin-left: 95px;
 }
 
 .navbar--custom {
@@ -95,7 +95,7 @@ export default {
     margin-left: 90px;
   }
   .ml_450 {
-    margin-left: 245px;
+    margin-left: 160px;
   }
 }
 
@@ -105,6 +105,7 @@ export default {
     margin-left: 0px;
   }
   .ml_450 {
+    justify-content: flex-end;
     margin-left: 70px;
   }
   .navbar-nav li {
@@ -116,6 +117,7 @@ export default {
 @media (max-width: 991.98px) {
   .ml_450 {
     margin-left: 45px;
+    justify-content: flex-start;
   }
 }
 

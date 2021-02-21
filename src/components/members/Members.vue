@@ -13,6 +13,7 @@
 
 <script>
 import MembersCarousel from "./components/members-carousel.vue";
+
 export default {
   name: "Memebers",
   components: {
@@ -22,12 +23,13 @@ export default {
 </script>
 
 <style>
+@import url("../../assets/member/common.css");
+
 #members {
   padding-left: 123px;
 }
 .member--wrapper {
   width: 100%;
-  border: 4px solid;
 }
 .member__title-line--separator {
   margin-top: 8px;
@@ -40,5 +42,11 @@ export default {
     #4285f4 -19.99%,
     rgba(121, 220, 242, 0) 94.51%
   );
+}
+
+@media (max-width: 1399.98px) {
+  #members {
+    padding-left: 123px;
+  }
 }
 </style>

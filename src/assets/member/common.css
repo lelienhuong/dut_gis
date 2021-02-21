@@ -1,0 +1,20 @@
+.department--name {
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 27px !important;
+  letter-spacing: 0em !important;
+  color: #202d51;
+}
+
+.member__name {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  /* text-align: left; */
+  color: #202d51;
+}

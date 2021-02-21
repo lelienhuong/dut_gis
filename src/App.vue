@@ -1,33 +1,51 @@
 <template>
   <div id="app">
     <Home />
-    <Features />
-    <Users />
+    <!-- <Features />
+    <Users /> -->
+    <Members />
     <Questions />
     <Footer />
   </div>
 </template>
 
 <script>
-import Home from "./components//home/Home.vue";
+import Home from "./components/home/Home.vue";
+// import Features from "./components/Features.vue";
+// import Users from "./components/Users.vue";
+import Members from "./components/members/Members.vue";
 import Questions from "./components/Questions.vue";
-import Features from "./components/Features.vue";
-import Users from "./components/Users.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Home,
+    // Features,
+    // Users,
+    Members,
     Questions,
-    Features,
-    Users,
     Footer,
   },
 };
 </script>
 
 <style>
+
+.section--title {
+  font-family: "Nunito Sans" ;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0B66BF;
+  /* margin-left: 225px; */
+  display: flex;
+  align-items: center;
+}
+
 * {
   font-family: "Nunito Sans";
   margin: 0;

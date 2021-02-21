@@ -59,7 +59,7 @@ export default {
   width: 100%;
 }
 .home--content--wrapper {
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(180deg, #d2def5 0%, rgba(233, 240, 255, 0) 100%);
   display: flex;
 }

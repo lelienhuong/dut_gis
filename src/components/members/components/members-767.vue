@@ -47,22 +47,20 @@
               Business Analyst
             </p>
 
-            <div class="ml-55">
+            <div class="ml-55" :class="is411">
               <img src="../../../assets/member/img/mi.svg" alt="Duyên Trần" />
-              <div class="member--name">
-                <p class="center-text" style="margin-right: 35px">
-                  Trần Thị Thùy Duyên
-                </p>
+              <div class="member--name" id="duyen">
+                <p class="center-text">Trần Thị Thùy Duyên</p>
                 <p
                   class="department--name center-text"
-                  style="margin-left: -40px; margin-top: -15px"
+                  style="margin-left: -15px; margin-top: -15px"
                 >
                   BA-Lead
                 </p>
               </div>
             </div>
 
-            <div class="ml-55">
+            <div class="ml-55" :class="is411">
               <img
                 src="../../../assets/member/img/linhhuong.svg"
                 alt="Linh Hương"
@@ -74,13 +72,13 @@
               </div>
             </div>
 
-            <div class="ml-55">
+            <div class="ml-55" :class="is411">
               <img
                 src="../../../assets/member/img/nguyen.svg"
                 alt="Phúc Nguyên"
               />
               <div class="member--name">
-                <p class="center-text">Trần Đình Phúc Nguyên</p>
+                <p class="center-text" style="margin-left: -20px">Trần Đình Phúc Nguyên</p>
               </div>
             </div>
           </div>
@@ -204,6 +202,24 @@
 <script>
 export default {
   name: "Members767",
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    };
+  },
+  computed: {
+    is411: function () {
+      if (this.windowWidth <= 410.98) {
+        return {
+          name__center: true,
+        };
+      } else {
+        return {
+          name__center: false,
+        };
+      }
+    },
+  },
 };
 </script>
 
@@ -245,6 +261,9 @@ export default {
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .ml-55 {
+    margin-left: 20px !important;
+  }
   .carousel-inner {
     width: 86% !important;
     left: 7% !important;
@@ -252,12 +271,21 @@ export default {
 }
 
 @media (max-width: 410.98px) {
+  .ml-55 {
+    margin-right: 5px !important;
+  }
   .carousel-inner {
     height: 945px !important;
+  }
+  #duyen p:first-child {
+    margin-left: 0px !important;
   }
 }
 
 @media (max-width: 321.98px) {
+  .row img:not(:first-child) {
+    padding-left: 0px !important;
+  }
   .carousel-inner {
     width: 100% !important;
     left: 0% !important;

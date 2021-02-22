@@ -84,13 +84,13 @@ a {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  .home--btn--wrapper{
+  .home--btn--wrapper {
     display: flex;
     justify-content: center;
     padding-bottom: 1px;
   }
-  #btn--try{
-    margin-left:  0px;
+  #btn--try {
+    margin-left: 0px;
   }
 }
 
@@ -103,19 +103,19 @@ a {
 }
 
 @media (max-width: 410.98px) {
-}
-
-@media (max-width: 321px) {
-  .home--btn--wrapper{
+  .home--btn--wrapper {
     flex-direction: column;
   }
-  .home--btn--wrapper a{
+  .home--btn--wrapper a {
     display: flex;
     justify-content: center;
   }
-  #btn--discover{
+  #btn--discover {
     margin-left: 0px;
     margin-top: 20px;
   }
+}
+
+@media (max-width: 321px) {
 }
 </style>

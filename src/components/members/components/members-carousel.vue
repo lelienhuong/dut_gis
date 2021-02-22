@@ -1,226 +1,198 @@
 <template>
-  <div class="members__carousel--wrapper">
-    <div id="carousel" class="carousel slide" data-ride="carousel">
-      <div class="position-relative" style="margin-top: 50px">
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carousel"
-            data-slide-to="0"
-            class="active department--name"
-          >
-            <div>
-              <p>PM</p>
-              <p>Project Manager</p>
-            </div>
-          </li>
-          <li
-            data-target="#carousel"
-            data-slide-to="1"
-            class="department--name"
-          >
-            <div>
-              <p>BA</p>
-              <p>Business Analyst</p>
-            </div>
-          </li>
-          <li
-            data-target="#carousel"
-            data-slide-to="2"
-            class="department--name"
-          >
-            <div>
-              <p>UM</p>
-              <p>UI/Map</p>
-            </div>
-          </li>
-          <li
-            data-target="#carousel"
-            data-slide-to="3"
-            class="department--name"
-          >
-            <div>
-              <p>FE</p>
-              <p>Front-End</p>
-            </div>
-          </li>
-          <li
-            data-target="#carousel"
-            data-slide-to="4"
-            class="department--name"
-          >
-            <div>
-              <p>BA</p>
-              <p>Back-End</p>
-            </div>
-          </li>
-          <li
-            data-target="#carousel"
-            data-slide-to="5"
-            class="department--name"
-          >
-            <div>
-              <p>Mo</p>
-              <p>Mobile</p>
-            </div>
-          </li>
-        </ol>
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div class="position-relative" style="margin-top: 50px">
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carousel"
+          data-slide-to="0"
+          class="active department--name"
+        >
+          <div>
+            <p>PM</p>
+            <p>Project Manager</p>
+          </div>
+        </li>
+        <li data-target="#carousel" data-slide-to="1" class="department--name">
+          <div>
+            <p>BA</p>
+            <p>Business Analyst</p>
+          </div>
+        </li>
+        <li data-target="#carousel" data-slide-to="2" class="department--name">
+          <div>
+            <p>UM</p>
+            <p>UI/Map</p>
+          </div>
+        </li>
+        <li data-target="#carousel" data-slide-to="3" class="department--name">
+          <div>
+            <p>FE</p>
+            <p>Front-End</p>
+          </div>
+        </li>
+        <li data-target="#carousel" data-slide-to="4" class="department--name">
+          <div>
+            <p>BA</p>
+            <p>Back-End</p>
+          </div>
+        </li>
+        <li data-target="#carousel" data-slide-to="5" class="department--name">
+          <div>
+            <p>Mo</p>
+            <p>Mobile</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <b-row>
+          <b-col>
+            <img src="../../../assets/member/img/dung.svg" alt="Mạnh Dũng" />
+            <p class="member--name center-text" style="margin-top: 4px">
+              Phạm Mạnh Dũng
+            </p>
+          </b-col>
+        </b-row>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <b-row>
-            <b-col>
-              <img src="../../../assets/member/img/dung.svg" alt="Mạnh Dũng" />
-              <p class="member--name center-text" style="margin-top: 4px">
-                Phạm Mạnh Dũng
-              </p>
-            </b-col>
-          </b-row>
-        </div>
 
-        <div class="carousel-item">
-          <b-row class="row__responsive">
-            <div :class="isColumn">
-              <img
-                src="../../../assets/member/img/linhhuong.svg"
-                alt="Linh Hương"
-              />
-              <p class="member--name center-text">Nguyễn Linh Hương</p>
-            </div>
+      <div class="carousel-item">
+        <b-row class="row__responsive">
+          <div :class="isColumn">
+            <img
+              src="../../../assets/member/img/linhhuong.svg"
+              alt="Linh Hương"
+            />
+            <p class="member--name center-text">Nguyễn Linh Hương</p>
+          </div>
 
-            <div class="ml-55" :class="isColumn">
-              <img src="../../../assets/member/img/mi.svg" alt="Duyên Trần" />
-              <div class="member--name" id="duyen">
-                <p class="center-text center-text">Trần Thị Thùy Duyên</p>
-                <p
-                  class="department--name center-text"
-                  style="margin-top: -10px"
-                >
-                  BA-Lead
-                </p>
-              </div>
-            </div>
-
-            <div class="ml-55" :class="isColumn">
-              <img
-                src="../../../assets/member/img/nguyen.svg"
-                alt="Nguyên Trần"
-              />
-              <p class="member--name center-text" style="margin-left: -20px">
-                Trần Đình Phúc Nguyên
-              </p>
-            </div>
-          </b-row>
-        </div>
-
-        <div class="carousel-item">
-          <b-row class="row__responsive">
-            <div :class="isColumn">
-              <img src="../../../assets/member/img/oanh.svg" alt="Kim Oanh" />
-              <p class="member--name center-text" style="margin-top: 2px">
-                Đỗ Thị Kim Oanh
-              </p>
-            </div>
-
-            <div class="ml-55" :class="isColumn">
-              <img src="../../../assets/member/img/van.svg" alt="Tiến Văn" />
-              <div class="member--name" style="margin-top: 4px">
-                <p class="center-text center-text">Nguyễn Tiến Văn</p>
-                <p
-                  class="department--name center-text"
-                  style="margin-top: -10px"
-                >
-                  Tech-Lead
-                </p>
-              </div>
-            </div>
-
-            <div class="ml-55" :class="isColumn">
-              <img src="../../../assets/member/img/hai.svg" alt="Hải Lê" />
-              <p class="member--name center-text" style="margin-top: 2px">
-                Lê Hồng Hải
-              </p>
-            </div>
-          </b-row>
-        </div>
-
-        <div class="carousel-item">
-          <b-row style="justify-content: center">
-            <b-col>
-              <img
-                style="padding: 0px"
-                src="../../../assets/member/img/trumcuoi.svg"
-                alt="Đức Huy"
-              />
-              <p class="member--name center-text" style="margin-top: 2px">
-                Nguyễn Hữu Đức Huy
-              </p>
+          <div class="ml-55" :class="isColumn">
+            <img src="../../../assets/member/img/mi.svg" alt="Duyên Trần" />
+            <div class="member--name" id="duyen">
+              <p class="center-text center-text">Trần Thị Thùy Duyên</p>
               <p class="department--name center-text" style="margin-top: -10px">
-                a.k.a Trùm-Cuối
+                BA-Lead
               </p>
-            </b-col>
+            </div>
+          </div>
 
-            <b-col class="ml-55">
-              <img
-                src="../../../assets/member/img/lienhuong.svg"
-                alt="Liên Hương"
-              />
-              <p class="member--name center-text" style="margin-top: 2px">
-                Lê Liên Hương
-              </p>
-            </b-col>
-          </b-row>
-        </div>
-
-        <div class="carousel-item">
-          <b-row>
-            <b-col>
-              <img
-                class="d-block"
-                src="../../../assets/member/img/ichhoa.svg"
-                alt="Ích Hòa"
-              />
-              <p class="member--name center-text" style="margin-top: 2px">
-                Nguyễn ích Hòa
-              </p>
-            </b-col>
-          </b-row>
-        </div>
-
-        <div class="carousel-item">
-          <b-row>
-            <b-col>
-              <img
-                class="d-block"
-                src="../../../assets/member/img/duc.svg"
-                alt="Nhân Đức"
-              />
-              <p class="member--name center-text" style="margin-top: 2px">
-                Lê Vĩnh Nhân Đức
-              </p>
-            </b-col>
-          </b-row>
-        </div>
+          <div class="ml-55" :class="isColumn">
+            <img
+              src="../../../assets/member/img/nguyen.svg"
+              alt="Nguyên Trần"
+            />
+            <p class="member--name center-text" style="margin-left: -20px">
+              Trần Đình Phúc Nguyên
+            </p>
+          </div>
+        </b-row>
       </div>
-      <div id="carousel_control">
-        <a
-          class="carousel-control-prev"
-          href="#carousel"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carousel"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+
+      <div class="carousel-item">
+        <b-row class="row__responsive">
+          <div :class="isColumn">
+            <img src="../../../assets/member/img/oanh.svg" alt="Kim Oanh" />
+            <p class="member--name center-text" style="margin-top: 2px">
+              Đỗ Thị Kim Oanh
+            </p>
+          </div>
+
+          <div class="ml-55" :class="isColumn">
+            <img src="../../../assets/member/img/van.svg" alt="Tiến Văn" />
+            <div class="member--name" style="margin-top: 4px">
+              <p class="center-text center-text">Nguyễn Tiến Văn</p>
+              <p class="department--name center-text" style="margin-top: -10px">
+                Tech-Lead
+              </p>
+            </div>
+          </div>
+
+          <div class="ml-55" :class="isColumn">
+            <img src="../../../assets/member/img/hai.svg" alt="Hải Lê" />
+            <p class="member--name center-text" style="margin-top: 2px">
+              Lê Hồng Hải
+            </p>
+          </div>
+        </b-row>
       </div>
+
+      <div class="carousel-item">
+        <b-row style="justify-content: center">
+          <b-col>
+            <img
+              style="padding: 0px"
+              src="../../../assets/member/img/trumcuoi.svg"
+              alt="Đức Huy"
+            />
+            <p class="member--name center-text" style="margin-top: 2px">
+              Nguyễn Hữu Đức Huy
+            </p>
+            <p class="department--name center-text" style="margin-top: -10px">
+              a.k.a Trùm-Cuối
+            </p>
+          </b-col>
+
+          <b-col class="ml-55">
+            <img
+              src="../../../assets/member/img/lienhuong.svg"
+              alt="Liên Hương"
+            />
+            <p class="member--name center-text" style="margin-top: 2px">
+              Lê Liên Hương
+            </p>
+          </b-col>
+        </b-row>
+      </div>
+
+      <div class="carousel-item">
+        <b-row>
+          <b-col>
+            <img
+              class="d-block"
+              src="../../../assets/member/img/ichhoa.svg"
+              alt="Ích Hòa"
+            />
+            <p class="member--name center-text" style="margin-top: 2px">
+              Nguyễn ích Hòa
+            </p>
+          </b-col>
+        </b-row>
+      </div>
+
+      <div class="carousel-item">
+        <b-row>
+          <b-col>
+            <img
+              class="d-block"
+              src="../../../assets/member/img/duc.svg"
+              alt="Nhân Đức"
+            />
+            <p class="member--name center-text" style="margin-top: 2px">
+              Lê Vĩnh Nhân Đức
+            </p>
+          </b-col>
+        </b-row>
+      </div>
+    </div>
+    <div id="carousel_control">
+      <a
+        class="carousel-control-prev"
+        href="#carousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
 </template>

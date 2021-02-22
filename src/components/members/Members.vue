@@ -6,25 +6,32 @@
         <!-- <img id="line" src="./assets/img/line_separator.svg" alt="" /> -->
         <div class="member__title-line--separator"></div>
       </h1>
-      <MembersCarousel />
+      <div class="members__carousel--wrapper">
+        <MembersCarousel />
+        <Members767 />
+      </div>
     </div>
   </section>
 </template>
 
 <script>
 import MembersCarousel from "./components/members-carousel.vue";
+import Members767 from "./components/members-767.vue";
 
 export default {
   name: "Memebers",
   components: {
     MembersCarousel,
+    Members767,
   },
 };
 </script>
 
 <style>
 @import url("../../assets/member/common.css");
-
+#carousel__768 {
+  display: none !important;
+}
 #members {
   margin-top: 100px;
   width: 100%;
@@ -59,8 +66,36 @@ export default {
   }
 }
 @media (max-width: 991.98px) {
-  .section--title{
+  .section--title {
     margin-left: 5px !important;
   }
+}
+@media (max-width: 767.98px) {
+  #carousel {
+    display: none !important;
+  }
+  #carousel__768 {
+    display: unset !important;
+  }
+  .section--title {
+    margin-left: 20px !important;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 410.98px) {
+  .member__title-line--separator {
+    display: none !important;
+  }
+  .section--title {
+    margin-left: 5px !important;
+    font-size: 32px !important;
+  }
+}
+@media (max-width: 410.98px){
+  
 }
 </style>

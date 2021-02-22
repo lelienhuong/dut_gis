@@ -87,7 +87,7 @@
               <p class="member--name center-text">Nguyễn Linh Hương</p>
             </b-col>
 
-            <b-col>
+            <b-col class="ml-55">
               <img src="../../../assets/member/img/mi.svg" alt="Duyên Trần" />
               <div class="member--name">
                 <p class="center-text center-text">Trần Thị Thùy Duyên</p>
@@ -100,7 +100,7 @@
               </div>
             </b-col>
 
-            <b-col>
+            <b-col class="ml-55">
               <img
                 src="../../../assets/member/img/nguyen.svg"
                 alt="Nguyên Trần"
@@ -121,7 +121,7 @@
               </p>
             </b-col>
 
-            <b-col>
+            <b-col class="ml-55">
               <img src="../../../assets/member/img/van.svg" alt="Tiến Văn" />
               <div class="member--name" style="margin-top: 4px">
                 <p class="center-text center-text">Nguyễn Tiến Văn</p>
@@ -134,7 +134,7 @@
               </div>
             </b-col>
 
-            <b-col>
+            <b-col class="ml-55">
               <img src="../../../assets/member/img/hai.svg" alt="Hải Lê" />
               <p class="member--name center-text" style="margin-top: 2px">
                 Lê Hồng Hải
@@ -159,7 +159,7 @@
               </p>
             </b-col>
 
-            <b-col style="margin-left: 150px">
+            <b-col class="ml-55">
               <img
                 src="../../../assets/member/img/lienhuong.svg"
                 alt="Liên Hương"
@@ -233,12 +233,16 @@ export default {
 
 
 <style>
+.ml-55 {
+  margin-left: 100px;
+}
 .carousel-item {
   height: 315px;
 }
 .row {
-  height: 100%;
-  justify-content: space-around;
+  /* height: 100%; */
+  justify-content: center;
+  margin-left: -70px !important;
 }
 .col {
   flex-grow: unset !important;
@@ -275,8 +279,8 @@ export default {
 }
 .carousel-inner {
   top: 100px;
-  /* left: 12% !important; */
-  width: 92% !important;
+  left: 10% !important;
+  width: 75% !important;
 }
 
 .carousel-control-prev {
@@ -300,17 +304,79 @@ export default {
 }
 
 @media (max-width: 1399.98px) {
+  .ml-55 {
+    margin-left: 30px !important;
+  }
   .members__carousel--wrapper {
     width: 94%;
     /* display: flex;
-    justify-content: center; */
+      justify-content: center; */
   }
-
+  .carousel-inner {
+    left: 3% !important;
+    width: 94% !important;
+  }
+  .carousel-indicators li {
+    margin-left: 50px !important;
+  }
   .carousel-control-prev {
     width: 2% !important;
   }
   .carousel-control-next {
     width: 2% !important;
+    right: 60px !important;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .carousel-inner {
+    width: 100% !important;
+    left: 0% !important;
+  }
+  .carousel-indicators {
+    left: 0% !important;
+  }
+  .carousel-indicators li {
+    margin-left: 40px !important;
+  }
+  .ml-55 {
+    margin-left: 25px !important;
+  }
+  .carousel-control-prev {
+    left: 40px !important;
+  }
+  .carousel-control-next {
+    right: 40px !important;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .row {
+    height: 879px;
+  }
+  #carousel_control {
+    display: none !important  ;
+  }
+  .memberPhoto__768 {
+    flex-direction: column !important ;
+  }
+  .carousel-indicators li:not(:first-child) {
+    margin-left: 25px !important;
+  }
+  .carousel-indicators li:first-child {
+    margin-left: 10px !important;
+  }
+  .memberPhoto__768 img {
+    padding-left: 0 !important;
+    margin-left: 20px !important;
+  }
+  .memberPhoto__768 .ml-55 {
+    margin-left: 0;
+  }
+  .memberPhoto__768 img:first-child {
+    margin-left: 0px !important;
   }
 }
 </style>

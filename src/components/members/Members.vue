@@ -26,7 +26,7 @@ export default {
 @import url("../../assets/member/common.css");
 
 #members {
-  padding-left: 123px;
+  margin-left: 123px;
 }
 .member--wrapper {
   width: 100%;
@@ -44,10 +44,12 @@ export default {
   );
 }
 
-
 @media (max-width: 1399.98px) {
+
+}
+@media (max-width: 1199.98px) {
   #members {
-    padding-left: 123px;
+    margin-left: 75px ;
   }
 }
 </style>

@@ -54,8 +54,8 @@ export default {
 @media (max-width: 1399.98px) {
 }
 @media (max-width: 1199.98px) {
-  #members {
-    margin-left: 25px;
-  }
+  .section--title {
+  margin-left: 25px !important;
+}
 }
 </style>

@@ -334,9 +334,12 @@ export default {
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .row{
+    margin-left: 0 !important;
+  }
   .carousel-inner {
-    width: 100% !important;
-    left: 5% !important;
+    width: 92% !important;
+    left: 4% !important;
   }
   .carousel-indicators {
     left: 0% !important;
@@ -348,10 +351,10 @@ export default {
     margin-left: 0px !important;
   }
   .carousel-control-prev {
-    left: 40px !important;
+    left: 25px !important;
   }
   .carousel-control-next {
-    right: 0px !important;
+    right: 25px !important;
   }
   #duyen {
     margin-left: -20px;

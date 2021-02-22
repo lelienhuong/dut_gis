@@ -1,5 +1,5 @@
 <template>
-  <section id="members">
+  <section id="members" style="height: 800px">
     <div class="members--wrapper">
       <h1 class="section--title">
         Thành viên tham gia
@@ -43,6 +43,7 @@ export default {
     rgba(121, 220, 242, 0) 94.51%
   );
 }
+
 
 @media (max-width: 1399.98px) {
   #members {

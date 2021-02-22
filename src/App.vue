@@ -3,7 +3,7 @@
     <Home />
     <!-- <Features />
     <Users /> -->
-    <!-- <Members /> -->
+    <Members />
     <!-- <Questions /> -->
     <!-- <Footer /> -->
   </div>
@@ -13,7 +13,7 @@
 import Home from "./components/home/Home.vue";
 // import Features from "./components/Features.vue";
 // import Users from "./components/Users.vue";
-// import Members from "./components/members/Members.vue";
+import Members from "./components/members/Members.vue";
 // import Questions from "./components/Questions.vue";
 // import Footer from "./components/Footer.vue";
 
@@ -23,7 +23,7 @@ export default {
     Home,
     // Features,
     // Users,
-    // Members,
+    Members,
     // Questions,
     // Footer,
   },

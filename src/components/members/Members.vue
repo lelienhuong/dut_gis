@@ -26,11 +26,18 @@ export default {
 @import url("../../assets/member/common.css");
 
 #members {
-  margin-left: 123px;
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
 }
 .member--wrapper {
-  width: 100%;
+  width: auto;
+  height: auto;
 }
+.section--title {
+  margin-left: 123px !important;
+}
+
 .member__title-line--separator {
   margin-top: 8px;
   margin-left: 15px;
@@ -45,11 +52,10 @@ export default {
 }
 
 @media (max-width: 1399.98px) {
-
 }
 @media (max-width: 1199.98px) {
   #members {
-    margin-left: 75px ;
+    margin-left: 25px;
   }
 }
 </style>

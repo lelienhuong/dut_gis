@@ -89,7 +89,7 @@
 
             <b-col class="ml-55">
               <img src="../../../assets/member/img/mi.svg" alt="Duyên Trần" />
-              <div class="member--name">
+              <div class="member--name" id="duyen">
                 <p class="center-text center-text">Trần Thị Thùy Duyên</p>
                 <p
                   class="department--name center-text"
@@ -240,10 +240,10 @@ export default {
   height: 315px;
 }
 .row {
-  /* height: 100%; */
+  width: 100%;
   justify-content: center;
-  margin-left: -70px !important;
 }
+
 .col {
   flex-grow: unset !important;
 }
@@ -269,7 +269,7 @@ export default {
   bottom: 0 !important;
   left: 0px !important ;
   margin-left: 0px !important;
-  /* margin-right: 5% !important; */
+  margin-right: 5% !important;
   display: -webkit-box !important;
 }
 
@@ -280,14 +280,14 @@ export default {
 .carousel-inner {
   top: 100px;
   left: 10% !important;
-  width: 75% !important;
+  width: 80% !important;
 }
 
 .carousel-control-prev {
   position: absolute;
   top: 120px !important;
   width: 3% !important;
-  /* left: 205px !important; */
+  left: 120px !important;
 }
 .carousel-control-next {
   position: absolute;
@@ -304,17 +304,21 @@ export default {
 }
 
 @media (max-width: 1399.98px) {
+  .carousel-indicators {
+    margin-right: 0% !important;
+    left: 0% !important;
+  }
   .ml-55 {
     margin-left: 30px !important;
   }
   .members__carousel--wrapper {
-    width: 94%;
+    /* width: 94%; */
     /* display: flex;
       justify-content: center; */
   }
   .carousel-inner {
-    left: 3% !important;
-    width: 94% !important;
+    left: 11% !important;
+    width: 84% !important;
   }
   .carousel-indicators li {
     margin-left: 50px !important;
@@ -332,7 +336,7 @@ export default {
 @media (max-width: 1199.98px) {
   .carousel-inner {
     width: 100% !important;
-    left: 0% !important;
+    left: 5% !important;
   }
   .carousel-indicators {
     left: 0% !important;
@@ -341,13 +345,16 @@ export default {
     margin-left: 40px !important;
   }
   .ml-55 {
-    margin-left: 25px !important;
+    margin-left: 0px !important;
   }
   .carousel-control-prev {
     left: 40px !important;
   }
   .carousel-control-next {
-    right: 40px !important;
+    right: 0px !important;
+  }
+  #duyen {
+    margin-left: -20px;
   }
 }
 

@@ -78,16 +78,16 @@
         </div>
 
         <div class="carousel-item">
-          <b-row>
-            <b-col>
+          <b-row class="row__responsive">
+            <div :class="isColumn">
               <img
                 src="../../../assets/member/img/linhhuong.svg"
                 alt="Linh Hương"
               />
               <p class="member--name center-text">Nguyễn Linh Hương</p>
-            </b-col>
+            </div>
 
-            <b-col class="ml-55">
+            <div class="ml-55" :class="isColumn">
               <img src="../../../assets/member/img/mi.svg" alt="Duyên Trần" />
               <div class="member--name" id="duyen">
                 <p class="center-text center-text">Trần Thị Thùy Duyên</p>
@@ -98,9 +98,9 @@
                   BA-Lead
                 </p>
               </div>
-            </b-col>
+            </div>
 
-            <b-col class="ml-55">
+            <div class="ml-55" :class="isColumn">
               <img
                 src="../../../assets/member/img/nguyen.svg"
                 alt="Nguyên Trần"
@@ -108,20 +108,20 @@
               <p class="member--name center-text" style="margin-left: -20px">
                 Trần Đình Phúc Nguyên
               </p>
-            </b-col>
+            </div>
           </b-row>
         </div>
 
         <div class="carousel-item">
-          <b-row>
-            <b-col>
+          <b-row class="row__responsive">
+            <div :class="isColumn">
               <img src="../../../assets/member/img/oanh.svg" alt="Kim Oanh" />
               <p class="member--name center-text" style="margin-top: 2px">
                 Đỗ Thị Kim Oanh
               </p>
-            </b-col>
+            </div>
 
-            <b-col class="ml-55">
+            <div class="ml-55" :class="isColumn">
               <img src="../../../assets/member/img/van.svg" alt="Tiến Văn" />
               <div class="member--name" style="margin-top: 4px">
                 <p class="center-text center-text">Nguyễn Tiến Văn</p>
@@ -132,14 +132,14 @@
                   Tech-Lead
                 </p>
               </div>
-            </b-col>
+            </div>
 
-            <b-col class="ml-55">
+            <div class="ml-55" :class="isColumn">
               <img src="../../../assets/member/img/hai.svg" alt="Hải Lê" />
               <p class="member--name center-text" style="margin-top: 2px">
                 Lê Hồng Hải
               </p>
-            </b-col>
+            </div>
           </b-row>
         </div>
 
@@ -228,11 +228,33 @@
 <script>
 export default {
   name: "MembersCarousel",
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    };
+  },
+  computed: {
+    isColumn: function () {
+      if (this.windowWidth <= 991.98) {
+        return {
+          name__center: true,
+        };
+      } else {
+        return {
+          name__center: false,
+        };
+      }
+    },
+  },
 };
 </script>
 
 
 <style>
+.col {
+  min-height: unset !important;
+}
+
 .ml-55 {
   margin-left: 100px;
 }
@@ -246,12 +268,6 @@ export default {
 
 .col {
   flex-grow: unset !important;
-}
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
-}
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e") !important;
 }
 
 .carousel-indicators li {
@@ -311,11 +327,6 @@ export default {
   .ml-55 {
     margin-left: 30px !important;
   }
-  .members__carousel--wrapper {
-    /* width: 94%; */
-    /* display: flex;
-      justify-content: center; */
-  }
   .carousel-inner {
     left: 11% !important;
     width: 84% !important;
@@ -334,7 +345,7 @@ export default {
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  .row{
+  .row {
     margin-left: 0 !important;
   }
   .carousel-inner {
@@ -348,7 +359,7 @@ export default {
     margin-left: 40px !important;
   }
   .ml-55 {
-    margin-left: 0px !important;
+    margin-left: 60px !important;
   }
   .carousel-control-prev {
     left: 25px !important;
@@ -363,14 +374,23 @@ export default {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  .row {
-    height: 879px;
+  .row__responsive {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .name__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .carousel-inner {
+    height: 868px;
+  }
+  .ml-55 {
+    margin-left: 0px !important;
   }
   #carousel_control {
     display: none !important  ;
-  }
-  .memberPhoto__768 {
-    flex-direction: column !important ;
   }
   .carousel-indicators li:not(:first-child) {
     margin-left: 25px !important;

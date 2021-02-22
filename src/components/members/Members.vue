@@ -1,5 +1,5 @@
 <template>
-  <section id="members" style="height: 800px">
+  <section id="members">
     <div class="members--wrapper">
       <h1 class="section--title">
         Thành viên tham gia
@@ -55,7 +55,12 @@ export default {
 }
 @media (max-width: 1199.98px) {
   .section--title {
-  margin-left: 25px !important;
+    margin-left: 25px !important;
+  }
 }
+@media (max-width: 991.98px) {
+  .section--title{
+    margin-left: 5px !important;
+  }
 }
 </style>

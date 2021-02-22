@@ -87,6 +87,7 @@ a {
   .home--btn--wrapper{
     display: flex;
     justify-content: center;
+    padding-bottom: 1px;
   }
   #btn--try{
     margin-left:  0px;

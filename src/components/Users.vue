@@ -207,8 +207,11 @@
           <img class="users__students--image" src="../assets/CLB-01.svg" />
           <div class="users__img--circle"></div>
         </div>
-        <div  data-aos="zoom-in"
-          data-aos-duration="1500" class="users__contents--wrapper">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          class="users__contents--wrapper"
+        >
           <h2>CLB, đội nhóm, đơn vị tổ chức sự kiện</h2>
           <p v-if="isShort4" class="users__students--description-summary">
             Các CLB, đội nhóm từ nay sẽ không phải đau đầu khi tổ chức sự kiện
@@ -253,7 +256,7 @@ export default {
   margin-top: 10vw;
   display: block;
   position: relative;
-  height: 55vw;
+  height: 38vw;
   padding: 10px;
 }
 .users__title {
@@ -299,7 +302,8 @@ export default {
 }
 .users__students--description-summary {
   color: #626262;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 27px;
   width: 100%;
   height: auto;
   margin-top: 2vw;

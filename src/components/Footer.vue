@@ -1,6 +1,6 @@
 <template>
   <section id="footer">
-    <div class="footer--wrap" style="margin-top: 15vw">
+    <div class="footer--wrap" >
       <div class="footer--wrapp-inner">
         <div class="footer__contact--wrapper">
           <img
@@ -102,6 +102,7 @@ export default {
 .footer--wrap {
   height: 20vw;
   width: auto;
+  margin-top: 11vw;
   background-image: url("../assets/Rectangle\ 6.svg");
   background-size: cover;
   display: flex;

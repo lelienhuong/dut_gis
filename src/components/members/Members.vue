@@ -35,11 +35,10 @@ export default {
 #members {
   margin-top: 100px;
   width: 100%;
-  height: auto;
 }
-.member--wrapper {
+.members--wrapper {
   width: auto;
-  height: auto;
+  height: 470px;
 }
 .section--title {
   margin-left: 123px !important;
@@ -95,7 +94,6 @@ export default {
     font-size: 32px !important;
   }
 }
-@media (max-width: 410.98px){
-  
+@media (max-width: 410.98px) {
 }
 </style>

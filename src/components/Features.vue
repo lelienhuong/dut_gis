@@ -22,14 +22,13 @@
             class="info_1 aos-init aos-animate"
           >
             <div class="info_1--title">
-              <img
-                src="../assets/number 1.svg"
-                class="info_1--img"
-              />
+              <img src="../assets/number 1.svg" class="info_1--img" />
               <div style="margin-left: 1%; color: rgb(98, 98, 98)">
                 <h3>Tìm kiếm thông tin địa điểm</h3>
-                Cho phép tìm kiếm và tra cứu thông tin các địa điểm trong nhà
-                trường, xác định vị trí hiện tại bằng QR hoặc GPS...
+                <p class="features__title--description">
+                  Cho phép tìm kiếm và tra cứu thông tin các địa điểm trong nhà
+                  trường, xác định vị trí hiện tại bằng QR hoặc GPS...
+                </p>
               </div>
             </div>
           </div>
@@ -53,14 +52,13 @@
             class="info_2 aos-init aos-animate"
           >
             <div class="info_2--title">
-              <img
-                src="../assets/number 2.svg"
-                class="info_2--img"
-              />
+              <img src="../assets/number 2.svg" class="info_2--img" />
               <div style="margin-left: 1%; color: rgb(98, 98, 98)">
                 <h3>Tìm đường đi</h3>
-                Tính năng chỉ dẫn đường dễ dàng cho bạn chọn tuyến đường ngắn
-                nhất đến địa điểm mà bạn muốn.
+                <p class="features__title--description">
+                  Tính năng chỉ dẫn đường dễ dàng cho bạn chọn tuyến đường ngắn
+                  nhất đến địa điểm mà bạn muốn.
+                </p>
               </div>
             </div>
           </div>
@@ -71,14 +69,13 @@
             style="top: 60vw"
           >
             <div class="info_1--title">
-              <img
-                src="../assets/number 3 1.svg"
-                class="info_1--img"
-              />
+              <img src="../assets/number 3 1.svg" class="info_1--img" />
               <div style="margin-left: 1%; color: rgb(98, 98, 98)">
                 <h3>Tra cứu thông tin phòng học</h3>
-                uniGO giúp bạn tra cứu thông tin phòng học, giảng viên và lớp
-                học phần vào một thời điểm xác định.
+                <p class="features__title--description">
+                  uniGO giúp bạn tra cứu thông tin phòng học, giảng viên và lớp
+                  học phần vào một thời điểm xác định.
+                </p>
               </div>
             </div>
           </div>
@@ -103,15 +100,14 @@
             style="top: 90vw"
           >
             <div class="info_2--title">
-              <img
-                src="../assets/number 4.svg"
-                class="info_2--img"
-              />
+              <img src="../assets/number 4.svg" class="info_2--img" />
               <div style="margin-left: 1%; color: rgb(98, 98, 98)">
                 <h3>Thông báo sự kiện của trường</h3>
-                Kết nối đoàn trường và CLB đến gần sinh viên, Unigo thông báo
-                thời gian địa điểm diễn ra, chia sẻ thông tin sự kiện đến các
-                bạn có nhu cầu tham gia.
+                <p class="features__title--description">
+                  Kết nối đoàn trường và CLB đến gần sinh viên, Unigo thông báo
+                  thời gian địa điểm diễn ra, chia sẻ thông tin sự kiện đến các
+                  bạn có nhu cầu tham gia.
+                </p>
               </div>
             </div>
           </div>
@@ -140,6 +136,9 @@ export default {
 </script>
 
 <style>
+#features {
+  margin-top: 100px;
+}
 .announcement {
   top: 80vw !important;
   left: 20% !important;
@@ -236,9 +235,9 @@ export default {
   padding: 12px;
 }
 .features__title--wrapper {
-  width: 42%;
+  width: 45%;
   height: 15vw;
-  margin-left: 10%;
+  margin-left: 110px;
 }
 .features__title--font {
   display: flex;
@@ -252,7 +251,8 @@ export default {
   margin: 0;
 }
 .features__title--description {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 27px;
   color: #626262;
 }
 </style>

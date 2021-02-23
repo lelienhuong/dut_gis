@@ -8,7 +8,7 @@
       <!-- Students -->
       <div
         data-aos="zoom-in"
-        data-aos-duration="700"
+        data-aos-duration="1500"
         class="users__students-line--wrapper"
       >
         <img class="users__students--line" src="../assets/line.svg" />
@@ -16,7 +16,7 @@
       <div class="users__students--wrapper students">
         <div
           data-aos="zoom-in"
-          data-aos-duration="700"
+          data-aos-duration="1500"
           class="users__img--shadow"
           style="position: relative"
         >
@@ -26,31 +26,34 @@
           />
           <div class="users__img--circle"></div>
         </div>
-        <div class="users__contents--wrapper">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          class="users__contents--wrapper"
+        >
           <h2>Sinh viên</h2>
           <p v-if="isShort0" class="users__students--description-summary">
             Ứng dụng hỗ trợ tra cứu tiện lợi, giúp các bạn nắm rõ thông tin...
           </p>
           <p v-if="!isShort0" class="users__students--description-summary">
             Ứng dụng hỗ trợ tra cứu tiện lợi, giúp các bạn nắm rõ thông tin
-            phòng học, lịch thi của từng môn. Và nhận được thông báo cá nhân về
-            lớp học phần
+            phòng học và nhận được thông báo cá nhân về lớp học phần.
           </p>
+          <button
+            @click="isShort0 = !isShort0"
+            v-if="isShort0"
+            class="users__students--description-full"
+          >
+            Đọc thêm
+          </button>
         </div>
-        <button
-          @click="isShort0 = !isShort0"
-          v-if="isShort0"
-          class="users__students--description-full"
-        >
-          Đọc thêm
-        </button>
       </div>
       <!-- End Students -->
 
       <!-- Freshman -->
       <div
         data-aos="zoom-in"
-        data-aos-duration="900"
+        data-aos-duration="1500"
         class="users__freshman-line--wrapper"
       >
         <img class="users__freshman--line" src="../assets/line (1).svg" />
@@ -58,7 +61,7 @@
       <div class="users__students--wrapper freshman--content">
         <div
           data-aos="zoom-in"
-          data-aos-duration="900"
+          data-aos-duration="1500"
           class="users__img--shadow"
           style="position: relative"
         >
@@ -68,7 +71,11 @@
           />
           <div class="users__img--circle"></div>
         </div>
-        <div class="users__contents--wrapper">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          class="users__contents--wrapper"
+        >
           <h2>Tân sinh viên</h2>
           <p v-if="isShort1" class="users__students--description-summary">
             Là vị “Cứu tinh” cho các bạn tân sinh viên dễ dàng trong việc tìm
@@ -77,23 +84,23 @@
           <p v-if="!isShort1" class="users__students--description-summary">
             Là vị “Cứu tinh” cho các bạn tân sinh viên dễ dàng trong việc tìm
             kiếm các khu giảng đường trong trường, cũng như thông tin và vị trí
-            của phòng chức năng
+            của phòng chức năng.
           </p>
+          <button
+            @click="isShort1 = !isShort1"
+            v-if="isShort1"
+            class="users__students--description-full"
+          >
+            Đọc thêm
+          </button>
         </div>
-        <button
-          @click="isShort1 = !isShort1"
-          v-if="isShort1"
-          class="users__students--description-full"
-        >
-          Đọc thêm
-        </button>
       </div>
       <!-- End Freshman -->
 
       <!-- Lecturers -->
       <div
         data-aos="zoom-in"
-        data-aos-duration="1300"
+        data-aos-duration="1500"
         class="users__lecturers-line--wrapper"
       >
         <img class="users__lecturers--line" src="../assets/line (2).svg" />
@@ -101,7 +108,7 @@
       <div class="users__students--wrapper lecturers--content">
         <div
           data-aos="zoom-in"
-          data-aos-duration="1300"
+          data-aos-duration="1500"
           class="users__img--shadow"
           style="position: relative"
         >
@@ -111,30 +118,34 @@
           />
           <div class="users__img--circle"></div>
         </div>
-        <div class="users__contents--wrapper">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          class="users__contents--wrapper lecturers-width"
+        >
           <h2>Giảng viên</h2>
           <p v-if="isShort2" class="users__students--description-summary">
             uniGO giúp giảng viên kiểm soát lịch dạy học của mình...
           </p>
           <p v-if="!isShort2" class="users__students--description-summary">
-            uniGO giúp giảng viên kiểm soát lịch dạy học của mình. Đồng thời nắm
-            được các thông báo chi tiết, phòng trống để đăng ký lớp
+            uniGO giúp giảng viên kiểm soát lịch dạy học của mình đồng thời nắm
+            được các thông báo chi tiết liên quan.
           </p>
+          <button
+            @click="isShort2 = !isShort2"
+            v-if="isShort2"
+            class="users__students--description-full"
+          >
+            Đọc thêm
+          </button>
         </div>
-        <button
-          @click="isShort2 = !isShort2"
-          v-if="isShort2"
-          class="users__students--description-full"
-        >
-          Đọc thêm
-        </button>
       </div>
       <!-- End Lecturers -->
 
       <!-- Guests -->
       <div
         data-aos="zoom-in"
-        data-aos-duration="900"
+        data-aos-duration="1500"
         class="users__guests-line--wrapper"
       >
         <img class="users__guests--line" src="../assets/Group (1).svg" />
@@ -142,9 +153,9 @@
       <div class="users__students--wrapper guests--content">
         <div
           data-aos="zoom-in"
-          data-aos-duration="900"
+          data-aos-duration="1500"
           class="users__img--shadow"
-          style="position: relative"
+          style="position: relative; background-color: transparent"
         >
           <img
             class="users__students--image guests--img"
@@ -152,7 +163,11 @@
           />
           <div class="users__img--circle"></div>
         </div>
-        <div class="users__contents--wrapper">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          class="users__contents--wrapper"
+        >
           <h2>Khách tham quan</h2>
           <p v-if="isShort3" class="users__students--description-summary">
             Không cần tốn thời gian vào việc hỏi đường và tra cứu bản đồ thủ
@@ -161,23 +176,23 @@
           <p v-if="!isShort3" class="users__students--description-summary">
             Không cần tốn thời gian vào việc hỏi đường và tra cứu bản đồ thủ
             công. Bạn có thể sử dụng ứng dụng để khám phá khuôn viên đẹp và thơ
-            mộng với diện tích hơn 24ha của trường
+            mộng với diện tích hơn 24ha của trường.
           </p>
+          <button
+            @click="isShort3 = !isShort3"
+            v-if="isShort3"
+            class="users__students--description-full"
+          >
+            Đọc thêm
+          </button>
         </div>
-        <button
-          @click="isShort3 = !isShort3"
-          v-if="isShort3"
-          class="users__students--description-full"
-        >
-          Đọc thêm
-        </button>
       </div>
       <!-- End Guests -->
 
       <!-- Clubs -->
       <div
         data-aos="zoom-in"
-        data-aos-duration="700"
+        data-aos-duration="1500"
         class="users__clubs-line--wrapper"
       >
         <img class="users__clubs--line" src="../assets/Group (3).svg" />
@@ -185,33 +200,33 @@
       <div class="users__students--wrapper clubs-content">
         <div
           data-aos="zoom-in"
-          data-aos-duration="700"
+          data-aos-duration="1500"
           class="users__img--shadow"
-          style="position: relative"
+          style="position: relative; background-color: transparent"
         >
           <img class="users__students--image" src="../assets/CLB-01.svg" />
           <div class="users__img--circle"></div>
         </div>
-        <div class="users__contents--wrapper">
+        <div  data-aos="zoom-in"
+          data-aos-duration="1500" class="users__contents--wrapper">
           <h2>CLB, đội nhóm, đơn vị tổ chức sự kiện</h2>
           <p v-if="isShort4" class="users__students--description-summary">
             Các CLB, đội nhóm từ nay sẽ không phải đau đầu khi tổ chức sự kiện
             lớn tại Bách Khoa...
           </p>
           <p v-if="!isShort4" class="users__students--description-summary">
-            Các CLB, đội nhóm từ nay sẽ không phải đau đầu khi tổ chức sự kiện
-            lớn tại Bách Khoa. Người tham gia chủ động tra cứu nhanh thông tin
-            phòng, giảm thiểu thời gian tìm đường, giúp việc tổ chức diễn ra
-            thuận lợi và suôn sẻ.
+            Tính năng thông báo sự kiện của UniGo giúp các CLB, đội nhóm quảng
+            bá event của mình. Người tham gia chủ động tra cứu nhanh thông tin
+            phòng, giúp việc tổ chức diễn ra thuận lợi và suôn sẻ.
           </p>
+          <button
+            @click="isShort4 = !isShort4"
+            v-if="isShort4"
+            class="users__students--description-full"
+          >
+            Đọc thêm
+          </button>
         </div>
-        <button
-          @click="isShort4 = !isShort4"
-          v-if="isShort4"
-          class="users__students--description-full"
-        >
-          Đọc thêm
-        </button>
       </div>
       <!-- End Clubs -->
     </div>
@@ -238,12 +253,11 @@ export default {
   margin-top: 10vw;
   display: block;
   position: relative;
-  height: 50vw;
+  height: 55vw;
   padding: 10px;
 }
-
 .users__title {
-  width: 20vw;
+  width: 23vw;
   height: 6vw;
   position: absolute;
   top: 0;
@@ -251,10 +265,8 @@ export default {
   transform: translateX(-50%);
   background-color: #fc4c3f;
   border-radius: 3vw;
-  position: relative;
   z-index: 2;
 }
-
 .users__title--font {
   position: absolute;
   width: 80%;
@@ -262,44 +274,38 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: #fff;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .users__students-line--wrapper {
   position: absolute;
   top: 3vw;
   left: 25%;
 }
-
 .users__students--line {
   width: 15vw;
   height: auto;
 }
-
 .users__students--wrapper {
   position: absolute;
   top: 3vw;
-  left: 20%;
+  left: 17%;
 }
-
 .users__students--image {
   width: 8vw;
   height: 8vw;
   background-color: #fff;
 }
-
 .users__students--description-summary {
   color: #626262;
   font-size: 18px;
-  width: 10vw;
+  width: 100%;
   height: auto;
   margin-top: 2vw;
 }
-
 .users__students--description-full {
-  color: black;
+  color: #000;
   font-size: 15px;
   text-decoration: underline;
   color: #202d51;
@@ -310,90 +316,80 @@ export default {
   cursor: pointer;
   font-weight: 700;
 }
-
+.lecturers-width {
+  width: 11vw !important;
+}
 .users__freshman-line--wrapper {
   position: absolute;
   top: 5vw;
-  left: 37%;
+  left: 36%;
 }
-
 .users__freshman--line {
   width: 5vw;
   height: auto;
 }
-
 .freshman--content {
   top: 9vw;
-  left: 33%;
+  left: 32%;
   border-color: #ff796a;
 }
-
 .users__contents--wrapper {
   width: 12vw;
   height: auto;
   color: #626262;
 }
-
 .users h2 {
   color: #202d51;
-  margin-top: 1vw;
+  margin-top: 10%;
+  font-size: 25px;
+  font-weight: 700;
 }
-
 .users__lecturers-line--wrapper {
   position: absolute;
   top: 6vw;
   left: 50%;
   transform: translateX(-50%) !important;
 }
-
 .users__lecturers--line {
   width: 1vw;
   height: auto;
 }
-
 .lecturers--content {
   top: 11vw;
   left: 52%;
-  transform: translateX(-50%);
+  transform: translateX(-55%);
 }
-
 .users__guests-line--wrapper {
   position: absolute;
   top: 5vw;
-  left: 60%;
+  left: 61%;
   transform: translateX(-50%) !important;
 }
-
 .users__guests--line {
   width: 5vw;
   height: auto;
 }
-
 .guests--content {
   top: 9vw;
-  left: 64%;
+  left: 65%;
   transform: translateX(-50%);
   border-color: #ff796a;
 }
-
 .users__clubs-line--wrapper {
   position: absolute;
   top: 3vw;
   left: 66%;
   transform: translateX(-50%) !important;
 }
-
 .users__clubs--line {
-  width: 15vw;
+  width: 16vw;
   height: auto;
 }
-
 .users__img--shadow {
   position: relative;
   width: 8vw;
   height: 8vw;
 }
-
 .users__img--circle {
   height: 7vw;
   width: 7vw;
@@ -402,14 +398,12 @@ export default {
   left: 51%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  box-shadow: 3px 3px 6px #00000045;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.27058823529411763);
 }
-
 .clubs-content {
   top: 3vw;
-  left: 75%;
+  left: 80%;
   transform: translateX(-50%);
   border-color: #0b66bf;
 }
-
 </style>

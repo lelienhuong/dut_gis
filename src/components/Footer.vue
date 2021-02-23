@@ -1,66 +1,84 @@
 <template>
   <section id="footer">
-    <div style="position: relative; height: 7vw">
-      <a href="#features">
-      <button id="footer--button" class="footer--button">
-        <img class="footer--button-img" src="../assets/button play.svg" />
-      </button>
-      </a>
-    </div>
-    <div class="footer--wrap">
-      <div class="footer__contact--wrapper">
-        <img class="footer__logo" src="../assets/logo edit-01 1.svg" />
-        <p class="footer__font-title">Thông tin liên hệ</p>
-        <div class="footer__contact-item--wrapper">
-          <img class="footer__contact-item--icon" src="../assets/Group (5).svg" />
-          <p class="footer__font-content">unigo@gmail.com</p>
+    <div class="footer--wrap" style="margin-top: 15vw">
+      <div class="footer--wrapp-inner">
+        <div class="footer__contact--wrapper">
+          <img
+            src="../assets/logouniGO-01.svg"
+            class="footer__logo"
+          />
+          <div class="footer__contact-content--width">
+            <div class="footer__contact-item--wrapper">
+              <img
+                src="../assets/Group (5).svg"
+                class="footer__contact-item--icon"
+              />
+              <p class="footer__font-content">unigo@gmail.com</p>
+            </div>
+            <div class="footer__contact-item--wrapper">
+              <img
+                src="../assets/Vector.svg"
+                class="footer__contact-item--icon"
+              />
+              <p class="footer__font-content">facebook.com/unigo</p>
+            </div>
+            <div class="footer__contact-item--wrapper">
+              <img
+                src="../assets/Vector (2).svg"
+                class="footer__contact-item--icon"
+              />
+              <p
+                class="footer__font-content phone"
+                style="justify-content: left"
+              >
+                (+84) 915 469 728 <br /><span
+                  >(Phạm Mạnh Dũng - Quản lý dự án)</span
+                >
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="footer__contact-item--wrapper">
-          <img class="footer__contact-item--icon" src="../assets/Vector.svg" />
-          <p class="footer__font-content">facebook.com/unigo</p>
+        <div class="footer__link-sections">
+          <p class="footer__font-title">Liên kết nhanh</p>
+          <div class="footer__links-item--wrapper">
+            <img
+              src="../assets/fast-forward 1.svg"
+              class="footer__contact-item--icon"
+            /><a href="" class="footer__font-content">Trang chủ</a>
+          </div>
+          <div class="footer__links-item--wrapper">
+            <img
+              src="../assets/fast-forward 1.svg"
+              class="footer__contact-item--icon"
+            /><a href="#features" class="footer__font-content">Tính năng</a>
+          </div>
+          <div class="footer__links-item--wrapper">
+            <img
+              src="../assets/fast-forward 1.svg"
+              class="footer__contact-item--icon"
+            /><a href="#user" class="footer__font-content">Đối tượng sử dụng</a>
+          </div>
+          <div class="footer__links-item--wrapper">
+            <img
+              src="../assets/fast-forward 1.svg"
+              class="footer__contact-item--icon"
+            /><a href="#questions" class="footer__font-content"
+              >Các câu hỏi thường gặp</a
+            >
+          </div>
         </div>
-        <div class="footer__contact-item--wrapper">
-          <img class="footer__contact-item--icon" src="../assets/Vector (2).svg" />
-          <p class="footer__font-content">
-            (+84) 915 469 728 <br />
-            (Phạm Mạnh Dũng - Quản lý dự án)
+        <div class="footer__form--wrapper">
+          <p class="footer__font-title form-font">
+            Bạn hãy để lại Gmail để nhận thông báo về ứng dụng sớm nhất nhé!
           </p>
-        </div>
-      </div>
-      <div class="footer__link-sections">
-        <p class="footer__font-title">Liên kết nhanh</p>
-        <div class="footer__contact-item--wrapper">
-          <img class="footer__contact-item--icon" src="../assets/fast-forward 1.svg" />
-          <a class="footer__font-content" href="">Trang chủ</a>
-        </div>
-        <div class="footer__contact-item--wrapper">
-          <img class="footer__contact-item--icon" src="../assets/fast-forward 1.svg" />
-          <a class="footer__font-content" href="#features">Tính năng</a>
-        </div>
-        <div class="footer__contact-item--wrapper">
-          <img class="footer__contact-item--icon" src="../assets/fast-forward 1.svg" />
-          <a class="footer__font-content" href="#user">Đối tượng sử dụng</a>
-        </div>
-        <div class="footer__contact-item--wrapper">
-          <img class="footer__contact-item--icon" src="../assets/fast-forward 1.svg" />
-          <a class="footer__font-content" href="#questions"
-            >Các câu hỏi thường gặp</a
-          >
-        </div>
-        <div class="footer__contact-item--wrapper">
-          <img class="footer__contact-item--icon" src="../assets/fast-forward 1.svg" />
-          <a class="footer__font-content" href="#footer">Thông tin liên hệ</a>
-        </div>
-      </div>
-      <div class="footer__form--wrapper">
-        <p class="footer__font-title form-font">
-          Bạn hãy để lại Gmail để nhận thông báo về ứng dụng sớm nhất nhé!
-        </p>
-        <div class="footer__form-subcribe--wrapper">
-          <input placeholder="example@gmail.com" class="footer__form--input" />
-          <button class="footer__form--button footer__font-content">
-            Đăng kí
-          </button>
+          <div class="footer__form-subcribe--wrapper">
+            <input
+              placeholder="example@gmail.com"
+              class="footer__form--input"
+            /><button class="footer__form--button footer__font-content">
+              Đăng kí
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -74,76 +92,85 @@ export default {
 </script>
 
 <style>
+.footer__contact-content--width {
+  margin-left: 6%;
+  position: absolute;
+  top: 6vw;
+  left: 3%;
+  width: 100%;
+}
 .footer--wrap {
-  height: 18vw;
+  height: 20vw;
   width: auto;
   background-image: url("../assets/Rectangle\ 6.svg");
   background-size: cover;
   display: flex;
-  color: white;
+  color: #fff;
   padding: 1vw;
 }
-
 .footer__contact--wrapper {
-  width: 30%;
-  margin: auto;
+  width: 35%;
+  position: relative;
+  left: 16%;
 }
-
 .footer__logo {
-  width: 10vw;
+  width: 15vw;
   height: auto;
+  position: absolute;
+  top: -15%;
+  left: 0;
 }
-
 .footer__font-title {
   font-weight: 800;
   font-size: 22px;
 }
-
 .footer__font-content {
   font-size: 16px;
   font-weight: 600;
   color: #fff;
+  margin: 0;
 }
-
-.footer__contact-item--wrapper a {
-  color: #ffffff;
+.footer__links-item--wrapper a {
+  color: #fff;
   text-decoration: none;
 }
-.footer__contact-item--wrapper a:hover {
+.footer__links-item--wrapper a:hover {
   text-decoration: underline;
 }
-
 .footer__contact-item--wrapper {
   display: flex;
   margin: 1vw 0 1vw 0;
+  align-items: baseline;
 }
-
+.footer__links-item--wrapper {
+  display: flex;
+  margin: 1vw 0 1vw 0;
+  align-items: center;
+}
 .footer__contact-item--icon {
-  width: 1vw;
-  height: auto;
+  width: 15px;
+  height: 15px;
   margin-right: 7px;
 }
-
 .footer__link-sections {
   width: 25%;
-  margin-top: 3vw;
+  margin-top: 6%;
+  margin-right: 2vw;
+  margin-left: 16vw;
 }
-
 .footer__form--wrapper {
-  width: 36%;
-  margin-top: 3vw;
+  width: 10%;
+  margin-top: 6%;
 }
-
 .footer__form-subcribe--wrapper {
   display: flex;
-  width: 23vw;
+  width: 24vw;
   height: 3vw;
   border-radius: 3vw;
   border-style: solid;
   border-color: #0a71c7;
-  margin-top: 2vw;
+  margin-top: 25%;
 }
-
 .footer__form--input {
   width: 80%;
   color: #bdbdbd;
@@ -156,13 +183,21 @@ export default {
   border-color: transparent;
   outline: none;
 }
-
+::-moz-placeholder {
+  color: #bdbdbd;
+  font-weight: 600;
+  font-size: 16px;
+}
+:-ms-input-placeholder {
+  color: #bdbdbd;
+  font-weight: 600;
+  font-size: 16px;
+}
 ::placeholder {
   color: #bdbdbd;
   font-weight: 600;
   font-size: 16px;
 }
-
 .footer__form--button {
   background-color: #0b66bf;
   border-radius: 3vw;
@@ -171,21 +206,32 @@ export default {
   outline: none;
   cursor: pointer;
 }
-
 .form-font {
-  width: 30vw;
+  width: 31vw;
 }
 .footer--button {
   outline: none;
   border: transparent;
   background-color: transparent;
   position: absolute;
-  right: 3vw;
+  right: 4vw;
   cursor: pointer;
-}
-
-.footer--button-img {
   width: 4vw;
   height: 4vw;
+  background-color: #0b66c0;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.27058823529411763);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.footer--button-img {
+  width: 2vw;
+  height: 2vw;
+}
+.footer--wrapp-inner {
+  display: flex;
+  justify-content: center;
 }
 </style>

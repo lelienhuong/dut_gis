@@ -8,21 +8,46 @@
       </div>
       <div class="question__content--wrapper">
         <div class="question__item--wrapper">
-          <div :class="isAnswer0 ? wrapper2 : wrapper">
+          <button
+            :class="isAnswer0 ? wrapper2 : wrapper"
+            @click="changeStatus0"
+          >
             <div class="question__detail">
-              <p :class="isAnswer0 ? font2 : font">DSC - DUT là gì?</p>
-              <button
-                :class="isAnswer0 ? button2 : button"
-                @click="changeStatus0"
-              >
-                <img
-                  :class="isAnswer0 ? icon2 : icon"
-                  src="../assets/plus.svg"
-                />
-              </button>
+              <p :class="isAnswer0 ? font2 : font">
+                Mục đích ra đời của uniGO là gì?
+              </p>
+              <div :class="isAnswer0 ? button2 : button">
+                <i class="fas fa-plus" :class="isAnswer0 ? icon2 : icon"></i>
+              </div>
+            </div>
+          </button>
+          <div
+            class="question__answer--wrapper"
+            :style="isAnswer0 ? height2 : height"
+          >
+            <div class="question__answer--detail">
+              <b>uniGO</b> ra đời với mong muốn xây dựng và đóng góp vào cộng
+              đồng. Được mọi người đón nhận và từng bước ứng dụng trong thực
+              tiễn.
             </div>
           </div>
-          <div v-if="isAnswer0" class="question__answer--wrapper">
+        </div>
+        <div class="question__item--wrapper">
+          <button
+            :class="isAnswer1 ? wrapper2 : wrapper"
+            @click="changeStatus1"
+          >
+            <div class="question__detail">
+              <p :class="isAnswer1 ? font2 : font">DSC - DUT là gì?</p>
+              <div :class="isAnswer1 ? button2 : button">
+                <i class="fas fa-plus" :class="isAnswer1 ? icon2 : icon"></i>
+              </div>
+            </div>
+          </button>
+          <div
+            class="question__answer--wrapper"
+            :style="isAnswer1 ? height2 : height"
+          >
             <div class="question__answer--detail">
               <b
                 >DSC - DUT (Developer Student Clubs - Da Nang University of
@@ -36,23 +61,23 @@
           </div>
         </div>
         <div class="question__item--wrapper">
-          <div :class="isAnswer1 ? wrapper2 : wrapper">
+          <button
+            :class="isAnswer2 ? wrapper2 : wrapper"
+            @click="changeStatus2"
+          >
             <div class="question__detail">
-              <p :class="isAnswer1 ? font2 : font">
+              <p :class="isAnswer2 ? font2 : font">
                 Sản phẩm có mất phí sử dụng không?
               </p>
-              <button
-                :class="isAnswer1 ? button2 : button"
-                @click="isAnswer1 = !isAnswer1"
-              >
-                <img
-                  :class="isAnswer1 ? icon2 : icon"
-                  src="../assets/plus.svg"
-                />
-              </button>
+              <div :class="isAnswer2 ? button2 : button">
+                <i class="fas fa-plus" :class="isAnswer2 ? icon2 : icon"></i>
+              </div>
             </div>
-          </div>
-          <div v-if="isAnswer1" class="question__answer--wrapper">
+          </button>
+          <div
+            class="question__answer--wrapper"
+            :style="isAnswer2 ? height2 : height"
+          >
             <div class="question__answer--detail">
               <b>Hoàn toàn không.</b> Đây là sản phẩm phi lợi nhuận được phát
               triển bởi DSC - DUT cho đơn vị trường Đại học Bách Khoa, hỗ trợ
@@ -61,52 +86,27 @@
           </div>
         </div>
         <div class="question__item--wrapper">
-          <div :class="isAnswer2 ? wrapper2 : wrapper">
+          <button
+            :class="isAnswer3 ? wrapper2 : wrapper"
+            @click="changeStatus3"
+          >
             <div class="question__detail">
-              <p :class="isAnswer2 ? font2 : font">
+              <p :class="isAnswer3 ? font2 : font">
                 Ứng dụng có cần sử dụng Internet không?
               </p>
-              <button
-                :class="isAnswer2 ? button2 : button"
-                @click="isAnswer2 = !isAnswer2"
-              >
-                <img
-                  :class="isAnswer2 ? icon2 : icon"
-                  src="../assets/plus.svg"
-                />
-              </button>
+              <div :class="isAnswer3 ? button2 : button">
+                <i class="fas fa-plus" :class="isAnswer3 ? icon2 : icon"></i>
+              </div>
             </div>
-          </div>
-          <div v-if="isAnswer2" class="question__answer--wrapper">
+          </button>
+          <div
+            class="question__answer--wrapper"
+            :style="isAnswer3 ? height2 : height"
+          >
             <div class="question__answer--detail">
               Hiện tại, sản phẩm sẽ được thiết kế dùng trước trên website và mở
               rộng ra điện thoại. Trước mắt, các thiết bị sẽ yêu cầu
               <b>có kết nối internet</b> (3G/4G/Wifi) để có thể sử dụng.
-            </div>
-          </div>
-        </div>
-        <div class="question__item--wrapper">
-          <div :class="isAnswer3 ? wrapper2 : wrapper">
-            <div class="question__detail">
-              <p :class="isAnswer3 ? font2 : font">
-                Mục đích ra đời của uniGO là gì?
-              </p>
-              <button
-                :class="isAnswer3 ? button2 : button"
-                @click="isAnswer3 = !isAnswer3"
-              >
-                <img
-                  :class="isAnswer3 ? icon2 : icon"
-                  src="../assets/plus.svg"
-                />
-              </button>
-            </div>
-          </div>
-          <div v-if="isAnswer3" class="question__answer--wrapper">
-            <div class="question__answer--detail">
-              <b>uniGO</b> ra đời với mong muốn xây dựng và đóng góp vào cộng
-              đồng. Được mọi người đón nhận và từng bước ứng dụng trong thực
-              tiễn.
             </div>
           </div>
         </div>
@@ -123,47 +123,56 @@ export default {
       isAnswer1: false,
       isAnswer2: false,
       isAnswer3: false,
-      button: "question__content--button",
-      button2: "question__content--button2",
       font: "question__detail--font",
       font2: "question__detail--font2",
       icon: "question__content--button-icon",
       icon2: "question__content--button-icon2",
       wrapper: "question__detail--wrapper",
       wrapper2: "question__detail--wrapper2",
+      button: "question__content--button",
+      button2: "question__content--button2",
+      height: "max-height: 0px;",
+      height2: "max-height: 100%;",
     };
   },
   methods: {
     changeStatus0() {
       this.isAnswer0 = !this.isAnswer0;
-      this.className = "question__content--button2";
+    },
+    changeStatus1() {
+      this.isAnswer1 = !this.isAnswer1;
+    },
+    changeStatus2() {
+      this.isAnswer2 = !this.isAnswer2;
+    },
+    changeStatus3() {
+      this.isAnswer3 = !this.isAnswer3;
     },
   },
 };
 </script>
 
 <style>
-* {
-  font-family: "Nunito Sans";
-}
 .question__detail--wrapper2 {
   width: 100%;
-  height: 3vw;
+  height: 4vw;
   border-style: solid;
   border-width: thin;
-  background-image: linear-gradient(to right, #fc4c3f, #ff796a);
+  outline: none;
+  background-image: linear-gradient(90deg, #fc4c3f, #ff796a);
   border-radius: 3vw;
   position: relative;
   border-color: #cecccc;
+  cursor: pointer;
 }
 
 .question__content--button2 {
   width: 2vw;
   height: 2vw;
-  margin: auto;
+  margin-right: 1vw;
   border-radius: 50%;
   outline: none;
-  background-color: #ffffff;
+  background-color: #fff;
   border-color: transparent;
   display: flex;
   align-items: center;
@@ -172,28 +181,24 @@ export default {
 }
 
 .question__detail--font2 {
-  width: 85%;
-  font-size: 19px;
-  font-family: "Nunito Sans";
-  /* color: #fff; */
+  font-size: 20px;
+  font-family: Nunito Sans;
   margin-left: 3vw;
   margin: auto;
   margin-left: 1vw;
   font-weight: 600;
-  color: #ffffff;
+  color: #fff;
 }
 
 .question__content--button-icon2 {
-  width: 1vw;
-  height: auto;
   filter: invert(40%) sepia(50%) saturate(4780%) hue-rotate(340deg)
     brightness(110%) contrast(98%);
   transform: rotate(45deg);
+  transition: transform 0.4s;
 }
 
 .question--wrapper {
   margin: auto;
-  height: 50vw;
 }
 
 .question__title--wrapper {
@@ -201,26 +206,28 @@ export default {
   height: 3vw;
   width: 33vw;
   margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .question__title-line--left {
   width: 5vw;
-  margin: auto;
   height: 3px;
-  background-image: linear-gradient(to right, #fff, #79dcf2, #4285f4);
+  background-image: linear-gradient(90deg, #fff, #79dcf2, #4285f4);
 }
 
 .question__title-line--right {
   width: 5vw;
-  margin: auto;
   height: 3px;
-  background-image: linear-gradient(to right, #4285f4, #79dcf2, #fff);
+  background-image: linear-gradient(90deg, #4285f4, #79dcf2, #fff);
 }
 
 .question__title--font {
   color: #0b66bf;
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 800;
+  text-align: center;
+  width: auto;
   margin: auto;
 }
 
@@ -229,23 +236,26 @@ export default {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+  justify-content: center;
 }
 
 .question__item--wrapper {
-  width: 30%;
-  padding: 3vw;
-  margin: 0vw 6vw 0vw 6vw;
+  width: 37%;
+  padding: 1vw;
+  font-size: 20px;
 }
 
 .question__detail--wrapper {
   width: 100%;
-  height: 3vw;
+  height: 4vw;
   border-style: solid;
+  outline: none;
+  background-color: transparent;
   border-width: thin;
-  /* background-image: linear-gradient(to right, #FC4C3F, #FF796A); */
   border-radius: 3vw;
   position: relative;
   border-color: #cecccc;
+  cursor: pointer;
 }
 
 .question__detail--wrapper:hover {
@@ -259,13 +269,13 @@ export default {
   display: flex;
   margin: auto;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .question__detail--font {
-  width: 85%;
-  font-size: 19px;
-  font-family: "Nunito Sans";
-  /* color: #fff; */
+  font-size: 20px;
+  font-family: Nunito Sans;
   margin-left: 3vw;
   color: #202d51;
   margin: auto;
@@ -276,10 +286,10 @@ export default {
 .question__content--button {
   width: 2vw;
   height: 2vw;
-  margin: auto;
+  margin-right: 1vw;
   border-radius: 50%;
   outline: none;
-  background-image: linear-gradient(to right, #fc4c3f, #ff796a);
+  background-image: linear-gradient(90deg, #fc4c3f, #ff796a);
   border-color: transparent;
   display: flex;
   align-items: center;
@@ -288,15 +298,18 @@ export default {
 }
 
 .question__content--button-icon {
-  width: 1vw;
-  height: auto;
-  filter: invert(1);
-  /* transform: rotate(45deg); */
+  color: #fff;
+  transition: transform 0.4s;
 }
 
 .question__answer--wrapper {
   display: flex;
   width: 100%;
+  height: auto;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s;
 }
 
 .question__answer--detail {
@@ -309,5 +322,4 @@ export default {
   padding: 3px;
   margin-left: 10px;
 }
-
 </style>

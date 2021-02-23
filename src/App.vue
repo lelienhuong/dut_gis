@@ -93,9 +93,6 @@ export default {
 /* Large devices (desktops, less than 1200px) */
 
 @media (max-width: 1199.98px) {
-  /* * {
-    font-size: 14px !important;
-  } */
   .features__title--font {
     font-size: 25px !important;
   }

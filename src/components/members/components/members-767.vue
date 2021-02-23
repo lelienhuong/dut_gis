@@ -3,7 +3,7 @@
     <div class="container position-relative">
       <a
         class="carousel-control-prev"
-        href="#carousel__768"
+        data-target="#carousel__768"
         role="button"
         data-slide="prev"
         style="position: absolute; top: 170px; z-index: 1300"
@@ -13,7 +13,7 @@
       </a>
       <a
         class="carousel-control-next"
-        href="#carousel__768"
+        data-target="#carousel__768"
         role="button"
         data-slide="next"
         style="position: absolute; top: 170px; z-index: 1300"
@@ -78,7 +78,9 @@
                 alt="Phúc Nguyên"
               />
               <div class="member--name">
-                <p class="center-text" style="margin-left: -20px">Trần Đình Phúc Nguyên</p>
+                <p class="center-text" style="margin-left: -20px">
+                  Trần Đình Phúc Nguyên
+                </p>
               </div>
             </div>
           </div>
@@ -267,6 +269,7 @@ export default {
   .carousel-inner {
     width: 86% !important;
     left: 7% !important;
+    height: 920px !important;
   }
 }
 

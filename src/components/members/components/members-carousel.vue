@@ -177,7 +177,7 @@
     <div id="carousel_control">
       <a
         class="carousel-control-prev"
-        href="#carousel"
+        data-target="#carousel"
         role="button"
         data-slide="prev"
       >
@@ -186,7 +186,7 @@
       </a>
       <a
         class="carousel-control-next"
-        href="#carousel"
+        data-target="#carousel"
         role="button"
         data-slide="next"
       >
@@ -236,6 +236,8 @@ export default {
 .row {
   width: 100%;
   justify-content: center;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 .col {

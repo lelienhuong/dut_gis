@@ -1,29 +1,29 @@
 <template>
   <div id="app">
-    <!-- <Home /> -->
+    <Home />
     <Features />
     <Users />
-    <!-- <Members /> -->
+    <Members />
     <Questions />
     <Footer />
   </div>
 </template>
 
 <script>
-// import Home from "./components/home/Home.vue";
+import Home from "./components/home/Home.vue";
 import Features from "./components/Features.vue";
 import Users from "./components/Users.vue";
-//import Members from "./components/members/Members.vue";
+import Members from "./components/members/Members.vue";
 import Questions from "./components/Questions.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    // Home,
+    Home,
     Features,
     Users,
-    //    Members,
+    Members,
     Questions,
     Footer,
   },
@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style>
+
 .section--title {
   font-family: "Nunito Sans";
   font-size: 35px;

@@ -44,7 +44,7 @@
             <img
               src="../assets/fast-forward 1.svg"
               class="footer__contact-item--icon"
-            /><a href="" class="footer__font-content">Trang chủ</a>
+            /><a href="#home" class="footer__font-content">Trang chủ</a>
           </div>
           <div class="footer__links-item--wrapper">
             <img
@@ -123,6 +123,7 @@ export default {
 .footer__font-title {
   font-weight: 800;
   font-size: 22px;
+  margin: 0;
 }
 .footer__font-content {
   font-size: 16px;
@@ -135,7 +136,8 @@ export default {
   text-decoration: none;
 }
 .footer__links-item--wrapper a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
+  color: white;
 }
 .footer__contact-item--wrapper {
   display: flex;
@@ -187,6 +189,8 @@ export default {
   color: #bdbdbd;
   font-weight: 600;
   font-size: 16px;
+  align-items: center;
+  justify-content: center;
 }
 :-ms-input-placeholder {
   color: #bdbdbd;

@@ -120,7 +120,7 @@
       </div>
       <div class="button-up">
         <div style="position: relative; height: 7vw">
-          <a href="#features"
+          <a href="#home"
             ><div id="footer--button" class="footer--button">
               <img
                 src="../assets/arrow-down-sign-to-navigate 1.svg"

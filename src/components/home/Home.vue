@@ -73,16 +73,21 @@ export default {
   line-height: 48px;
 }
 .home--title h1 {
-  font-size: 35px;
+  font-size: 35px !important;
   font-weight: 800;
+}
+.home--title span {
+  font-size: 35px !important;
 }
 
 .home--text {
   width: 90%;
-  font-size: 20px;
   line-height: 27px;
   margin-top: 50px;
   color: #626262;
+}
+.home--text p {
+  font-size: 20px !important;
 }
 
 .home--image {

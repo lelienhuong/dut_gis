@@ -54,6 +54,9 @@ export default {
   .phone {
     width: 110%;
   }
+  .users{
+    height: 58vw;
+  }
   /* * {
     font-size: 18px !important;
   } */
@@ -377,7 +380,7 @@ export default {
   #features__school-event--text {
     top: 113vw;
   }
-  .announcement{
+  .announcement {
     top: 124vw !important;
   }
 
@@ -476,6 +479,12 @@ export default {
 }
 
 @media (max-width: 575.98px) {
+  .features__title--wrapper {
+    width: 62vw;
+    height: 33vw;
+    margin-left: 10%;
+  }
+
   .clubs-content,
   .guests--content {
     top: 71vw;
@@ -527,10 +536,11 @@ export default {
     margin-right: 1vw;
   }
 
-  /* *,
+  *,
   .features h3 {
     font-size: 12px !important;
-  } */
+  }
+
   .features {
     margin-top: 0;
   }
@@ -593,7 +603,7 @@ export default {
     font-size: 11px !important;
   }
   .question__title-line--left,
-  .question__title-line--right {
+  .feature__title-line--separator {
     height: 2px;
   }
   .phone span {
@@ -610,7 +620,7 @@ export default {
     opacity: 0;
   }
   .question__title-line--left,
-  .question__title-line--right {
+  .feature__title-line--separator {
     width: 7vw;
   }
   .question__title--wrapper {
@@ -656,9 +666,9 @@ export default {
   .pic2-bg {
     left: 12%;
   }
-  /* * {
+  * {
     font-size: 10px !important;
-  } */
+  }
   .info_1 {
     left: 9%;
     top: 0;
@@ -688,7 +698,7 @@ export default {
     height: 175vw;
   }
   .question__title-line--left,
-  .question__title-line--right {
+  .feature__title-line--separator {
     height: 1px;
   }
   .question__title--font {
@@ -739,7 +749,7 @@ export default {
     width: 50vw;
   }
   .question__title-line--left,
-  .question__title-line--right {
+  .feature__title-line--separator {
     width: 9vw;
   }
   .features__title--font {
@@ -748,9 +758,9 @@ export default {
 }
 
 @media (max-width: 412px) {
-  /* * {
+  * {
     font-size: 9px !important;
-  } */
+  }
 }
 
 @media (max-width: 364.98px) {
@@ -760,9 +770,9 @@ export default {
     height: 12px;
     margin-right: 2vw;
   }
-  /* * {
+  * {
     font-size: 8px !important;
-  } */
+  }
   .clubs-content,
   .guests--content {
     top: 73vw;

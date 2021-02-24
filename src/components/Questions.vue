@@ -153,6 +153,9 @@ export default {
 </script>
 
 <style>
+#questions {
+  margin-top: 150px;
+}
 .question__detail--wrapper2 {
   width: 100%;
   height: 4vw;
@@ -237,6 +240,7 @@ export default {
   width: 100%;
   height: auto;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .question__item--wrapper {

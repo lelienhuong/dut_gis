@@ -38,7 +38,7 @@ export default {
 }
 .members--wrapper {
   width: auto;
-  height: 470px;
+  height: 500px;
 }
 .section--title {
   margin-left: 123px !important;

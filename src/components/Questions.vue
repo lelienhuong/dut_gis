@@ -154,7 +154,7 @@ export default {
 
 <style>
 #questions {
-  margin-top: 150px;
+  margin-top: 200px;
 }
 .question__detail--wrapper2 {
   width: 100%;

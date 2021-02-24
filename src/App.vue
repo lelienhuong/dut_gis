@@ -57,8 +57,17 @@ export default {
   /* * {
     font-size: 18px !important;
   } */
+  .features__title--wrapper{
+    width: 40%;
+  }
   .features__title--font p {
     font-size: 29px !important;
+  }
+  .features{
+    margin-top: 50px;
+  }
+  .info_1{
+    top: -50px;
   }
   .users__title--font {
     font-size: 22px !important;
@@ -68,6 +77,9 @@ export default {
   }
   .features h3 {
     font-size: 20px !important;
+  }
+  #questions{
+    margin-top: 100px;
   }
   .question__answer--detail,
   .question__detail--font,
@@ -101,7 +113,7 @@ export default {
   .features {
     margin-top: 50px;
   }
-  .info_1{
+  .info_1 {
     top: -60px;
   }
   .features__title--wrapper {
@@ -144,8 +156,17 @@ export default {
   .question__detail--wrapper2 {
     width: 100%;
   }
+  .footer__contact--wrapper{
+    left: 0;
+  }
   .footer__font-title {
     font-size: 15px !important;
+  }
+  .footer__link-sections{
+    margin-left: 13vw;
+  }
+  .footer__form--wrapper{
+    margin-left: 6vw;
   }
   .footer__font-content,
   .phone span {
@@ -189,7 +210,7 @@ export default {
     width: 20vw !important;
   }
   .users {
-    height: 150vw;
+    height: 165vw;
     margin-top: 25vw;
   }
   .users__clubs--line,
@@ -209,6 +230,12 @@ export default {
   }
   .features {
     background: transparent;
+    margin-top: 90px;
+  }
+  .features__title--wrapper {
+    height: 22vw;
+    width: 58%;
+    margin-left: 0px;
   }
   .info_1 {
     left: 13%;
@@ -248,17 +275,20 @@ export default {
     transform: translateX(-50%);
   }
   .guests--content {
-    top: 70vw;
+    top: 80vw;
     left: 35%;
     transform: translateX(-50%);
   }
   .clubs-content {
     left: 62% !important;
-    top: 70vw;
+    top: 80vw;
   }
   .question__title--font {
     font-size: 25px !important;
     width: 100%;
+  }
+  #questions{
+    margin-top: 100px;
   }
   .question__title--wrapper {
     width: 40vw;

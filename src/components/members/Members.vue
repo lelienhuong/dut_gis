@@ -67,6 +67,10 @@ export default {
   .section--title {
     margin-left: 5px !important;
   }
+  .members--wrapper {
+    width: auto;
+    height: 1040px;
+  }
 }
 @media (max-width: 767.98px) {
   #carousel {

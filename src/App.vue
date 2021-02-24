@@ -57,16 +57,16 @@ export default {
   /* * {
     font-size: 18px !important;
   } */
-  .features__title--wrapper{
+  .features__title--wrapper {
     width: 40%;
   }
   .features__title--font p {
     font-size: 29px !important;
   }
-  .features{
+  .features {
     margin-top: 50px;
   }
-  .info_1{
+  .info_1 {
     top: -50px;
   }
   .users__title--font {
@@ -78,7 +78,7 @@ export default {
   .features h3 {
     font-size: 20px !important;
   }
-  #questions{
+  #questions {
     margin-top: 100px;
   }
   .question__answer--detail,
@@ -156,16 +156,16 @@ export default {
   .question__detail--wrapper2 {
     width: 100%;
   }
-  .footer__contact--wrapper{
+  .footer__contact--wrapper {
     left: 0;
   }
   .footer__font-title {
     font-size: 15px !important;
   }
-  .footer__link-sections{
+  .footer__link-sections {
     margin-left: 13vw;
   }
-  .footer__form--wrapper{
+  .footer__form--wrapper {
     margin-left: 6vw;
   }
   .footer__font-content,
@@ -287,7 +287,7 @@ export default {
     font-size: 25px !important;
     width: 100%;
   }
-  #questions{
+  #questions {
     margin-top: 100px;
   }
   .question__title--wrapper {
@@ -346,8 +346,23 @@ export default {
     height: 18px;
   }
   .features__title--wrapper {
-    width: 62vw;
+    width: 66vw;
     height: 33vw;
+  }
+  .pic2-bg {
+    top: 30vw;
+  }
+  #features__room-info--text {
+    margin-top: 3vw;
+  }
+  #features__room-info--image {
+    margin-top: 10vw;
+  }
+  #features__school-event--text {
+    margin-top: 8vw;
+  }
+  #features__school-event--image {
+    margin-top: 23vw;
   }
   /* *,
   .features h3 {
@@ -357,19 +372,32 @@ export default {
   .users__title--font {
     font-size: 20px !important;
   }
+  .users__contents--wrapper{
+    width: 27vw;
+  }
   .users__title {
     width: 38vw;
     height: 8vw;
   }
   .guests--content {
     top: 85vw;
+    left: 28%;
+  }
+  .clubs-content {
+    left: 68% !important;
+    top: 86vw;
   }
   .users {
     height: 190vw;
+    margin-top: 55vw;
   }
-  .clubs-content {
-    top: 85vw;
+  .students {
+    left: 6% !important;
   }
+  .lecturers--content {
+    left: 85vw;
+  }
+
   .question__title--font {
     font-size: 20px !important;
   }
@@ -481,6 +509,7 @@ export default {
   .footer__contact-item--icon {
     margin-right: 1vw;
   }
+
   /* *,
   .features h3 {
     font-size: 12px !important;

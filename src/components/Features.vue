@@ -63,13 +63,14 @@
               </div>
             </div>
           </div>
+
           <div
             data-aos="fade-right"
             data-aos-duration="1500"
             class="info_1 aos-init aos-animate"
             style="top: 60vw"
           >
-            <div class="info_1--title">
+            <div class="info_1--title" id="features__room-info--text">
               <img src="../assets/number 3 1.svg" class="info_1--img" />
               <div style="margin-left: 1%; color: rgb(98, 98, 98)">
                 <h3>Tra cứu thông tin phòng học</h3>
@@ -84,13 +85,16 @@
             data-aos="zoom-in"
             data-aos-duration="2000"
             class="pic1-bg search aos-init aos-animate"
+            id="features__room-info--image"
           >
             <img src="../assets/3-01 1.svg" class="pic1" />
           </div>
+
           <div
             data-aos="zoom-in"
             data-aos-duration="1500"
             class="pic2-bg announcement aos-init aos-animate"
+            id="features__school-event--image"
           >
             <img src="../assets/tb-01 1.svg" class="pic2" />
           </div>
@@ -98,7 +102,7 @@
             data-aos="fade-left"
             data-aos-duration="2000"
             class="info_2 aos-init aos-animate"
-            style="top: 90vw"
+            id="features__school-event--text"
           >
             <div class="info_2--title">
               <img src="../assets/number 4.svg" class="info_2--img" />
@@ -139,6 +143,9 @@ export default {
 <style>
 #features {
   margin-top: 100px;
+}
+#features__school-event--text {
+  top: 90vw;
 }
 .announcement {
   top: 80vw !important;

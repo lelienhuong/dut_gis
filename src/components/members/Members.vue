@@ -3,7 +3,6 @@
     <div class="members--wrapper">
       <h1 class="section--title">
         Thành viên tham gia
-        <!-- <img id="line" src="./assets/img/line_separator.svg" alt="" /> -->
         <div class="member__title-line--separator"></div>
       </h1>
       <div class="members__carousel--wrapper">

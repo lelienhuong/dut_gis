@@ -31,7 +31,6 @@ export default {
 </script>
 
 <style>
-
 .section--title {
   font-family: "Nunito Sans";
   font-size: 35px;
@@ -55,9 +54,9 @@ export default {
   .phone {
     width: 110%;
   }
-  * {
+  /* * {
     font-size: 18px !important;
-  }
+  } */
   .features__title--font p {
     font-size: 29px !important;
   }
@@ -96,15 +95,23 @@ export default {
 }
 
 @media (max-width: 1199.98px) {
-  * {
+  /* * {
     font-size: 17px !important;
+  } */
+  .features {
+    margin-top: 50px;
+  }
+  .info_1{
+    top: -60px;
   }
   .features__title--wrapper {
     height: 22vw;
+    margin-left: 13px;
+    width: 46%;
   }
-  .features__title--font {
+  /* .features__title--font {
     font-size: 25px !important;
-  }
+  } */
   .users {
     height: 65vw;
   }
@@ -123,7 +130,7 @@ export default {
     width: 30vw;
   }
   .info_2 {
-    right: 14%;
+    right: 17%;
     width: 32vw;
   }
   .question__answer--detail,
@@ -159,9 +166,9 @@ export default {
   .users__students--image {
     background-color: transparent;
   }
-  * {
+  /* * {
     font-size: 17px !important;
-  }
+  } */
   .users h2 {
     text-align: center;
   }
@@ -312,10 +319,10 @@ export default {
     width: 62vw;
     height: 33vw;
   }
-  *,
+  /* *,
   .features h3 {
     font-size: 15px !important;
-  }
+  } */
   .features__title--font p,
   .users__title--font {
     font-size: 20px !important;
@@ -444,10 +451,10 @@ export default {
   .footer__contact-item--icon {
     margin-right: 1vw;
   }
-  *,
+  /* *,
   .features h3 {
     font-size: 12px !important;
-  }
+  } */
   .features__title--font p {
     font-size: 15px !important;
   }
@@ -553,9 +560,9 @@ export default {
   .pic2-bg {
     left: 12%;
   }
-  * {
+  /* * {
     font-size: 10px !important;
-  }
+  } */
   .info_1 {
     left: 9%;
     top: 0;
@@ -645,9 +652,9 @@ export default {
 }
 
 @media (max-width: 412px) {
-  * {
+  /* * {
     font-size: 9px !important;
-  }
+  } */
 }
 
 @media (max-width: 364.98px) {
@@ -657,9 +664,9 @@ export default {
     height: 12px;
     margin-right: 2vw;
   }
-  * {
+  /* * {
     font-size: 8px !important;
-  }
+  } */
   .clubs-content,
   .guests--content {
     top: 73vw;

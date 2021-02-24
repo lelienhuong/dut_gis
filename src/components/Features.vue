@@ -4,11 +4,12 @@
       <div class="features--content">
         <div class="features__title--wrapper">
           <div class="features__title--font">
-            <p>uniGO đem lại gì?</p>
-            <div
+            <h1>uniGO đem lại gì?</h1>
+            <div class="feature__title-line--separator"></div>
+            <!-- <div
               class="question__title-line--right"
               style="margin-left: 2%"
-            ></div>
+            ></div> -->
           </div>
           <div class="features__title--description">
             Giải pháp thông minh được phát triển trên nền tảng website và ứng
@@ -235,7 +236,7 @@ export default {
   padding: 12px;
 }
 .features__title--wrapper {
-  width: 45%;
+  width: 30%;
   height: 15vw;
   margin-left: 110px;
 }
@@ -244,7 +245,7 @@ export default {
   height: 30%;
   align-items: center;
 }
-.features__title--font p {
+.features__title--font h1 {
   font-size: 35px !important;
   font-weight: 800;
   color: #0b66bf;
@@ -254,6 +255,18 @@ export default {
   font-size: 20px;
   line-height: 27px;
   color: #626262;
+}
+.feature__title-line--separator {
+  margin-top: 8px;
+  margin-left: 15px;
+  width: 10vw;
+  height: 4px;
+  /* margin: auto; */
+  background-image: linear-gradient(
+    90deg,
+    #4285f4 -19.99%,
+    rgba(121, 220, 242, 0) 94.51%
+  );
 }
 </style>
 

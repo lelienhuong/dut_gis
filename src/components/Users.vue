@@ -284,16 +284,16 @@ export default {
 .users__students-line--wrapper {
   position: absolute;
   top: 3vw;
-  left: 25%;
+  left: 20%;
 }
 .users__students--line {
-  width: 15vw;
+  width: 18vw;
   height: auto;
 }
 .users__students--wrapper {
   position: absolute;
   top: 3vw;
-  left: 17%;
+  left: 12%;
 }
 .users__students--image {
   width: 8vw;
@@ -326,15 +326,15 @@ export default {
 .users__freshman-line--wrapper {
   position: absolute;
   top: 5vw;
-  left: 36%;
+  left: 32%;
 }
 .users__freshman--line {
-  width: 5vw;
+  width: 8vw;
   height: auto;
 }
 .freshman--content {
-  top: 9vw;
-  left: 32%;
+  top: 12vw;
+  left: 28%;
   border-color: #ff796a;
 }
 .users__contents--wrapper {
@@ -366,27 +366,27 @@ export default {
 .users__guests-line--wrapper {
   position: absolute;
   top: 5vw;
-  left: 61%;
+  left: 64%;
   transform: translateX(-50%) !important;
 }
 .users__guests--line {
-  width: 5vw;
+  width: 8vw;
   height: auto;
 }
 .guests--content {
-  top: 9vw;
-  left: 65%;
+  top: 12vw;
+  left: 69%;
   transform: translateX(-50%);
   border-color: #ff796a;
 }
 .users__clubs-line--wrapper {
   position: absolute;
   top: 3vw;
-  left: 66%;
+  left: 71%;
   transform: translateX(-50%) !important;
 }
 .users__clubs--line {
-  width: 16vw;
+  width: 18vw;
   height: auto;
 }
 .users__img--shadow {
@@ -406,7 +406,7 @@ export default {
 }
 .clubs-content {
   top: 3vw;
-  left: 80%;
+  left: 85%;
   transform: translateX(-50%);
   border-color: #0b66bf;
 }

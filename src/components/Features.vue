@@ -16,7 +16,7 @@
             dụng dành cho điện thoại di động với các tính năng
           </div>
         </div>
-        <div class="features">
+        <div class="features" >
           <div
             data-aos="fade-right"
             data-aos-duration="2000"
@@ -68,7 +68,7 @@
             data-aos="fade-right"
             data-aos-duration="1500"
             class="info_1 aos-init aos-animate"
-            style="top: 60vw"
+            id="features__room-info--text"
           >
             <div class="info_1--title" id="features__room-info--text">
               <img src="../assets/number 3 1.svg" class="info_1--img" />
@@ -85,7 +85,6 @@
             data-aos="zoom-in"
             data-aos-duration="2000"
             class="pic1-bg search aos-init aos-animate"
-            id="features__room-info--image"
           >
             <img src="../assets/3-01 1.svg" class="pic1" />
           </div>
@@ -94,7 +93,6 @@
             data-aos="zoom-in"
             data-aos-duration="1500"
             class="pic2-bg announcement aos-init aos-animate"
-            id="features__school-event--image"
           >
             <img src="../assets/tb-01 1.svg" class="pic2" />
           </div>
@@ -146,6 +144,9 @@ export default {
 }
 #features__school-event--text {
   top: 90vw;
+}
+#features__room-info--text{
+  top: 60vw;
 }
 .announcement {
   top: 80vw !important;

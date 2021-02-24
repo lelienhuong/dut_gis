@@ -345,25 +345,42 @@ export default {
     width: 18px;
     height: 18px;
   }
-  .features__title--wrapper {
-    width: 66vw;
-    height: 33vw;
+  .features {
+    /* margin-top: 0; */
+    overflow-x: hidden;
+    height: 156vw;
+  }
+  .info_1 {
+    left: 4%;
+    top: 0;
+  }
+  .info_2 {
+    top: 40vw;
+  }
+  .pic1-bg {
+    top: 0;
   }
   .pic2-bg {
-    top: 30vw;
+    top: 42vw;
   }
   #features__room-info--text {
-    margin-top: 3vw;
+    top: 75vw;
   }
-  #features__room-info--image {
-    margin-top: 10vw;
+  .search {
+    top: 77vw !important;
   }
+  .features__title--wrapper {
+    width: 65vw;
+    /* height: 30vw; */
+  }
+
   #features__school-event--text {
-    margin-top: 8vw;
+    top: 113vw;
   }
-  #features__school-event--image {
-    margin-top: 23vw;
+  .announcement{
+    top: 124vw !important;
   }
+
   /* *,
   .features h3 {
     font-size: 15px !important;
@@ -372,7 +389,7 @@ export default {
   .users__title--font {
     font-size: 20px !important;
   }
-  .users__contents--wrapper{
+  .users__contents--wrapper {
     width: 27vw;
   }
   .users__title {
@@ -389,7 +406,7 @@ export default {
   }
   .users {
     height: 190vw;
-    margin-top: 55vw;
+    margin-top: 17vw;
   }
   .students {
     left: 6% !important;
@@ -514,11 +531,31 @@ export default {
   .features h3 {
     font-size: 12px !important;
   } */
+  .features {
+    margin-top: 0;
+  }
   .features__title--font p {
     font-size: 15px !important;
   }
+  .info_1 {
+    top: 0;
+  }
+  .pic1-bg {
+    top: 0;
+  }
   .info_2 {
+    top: 40vw;
     width: 45%;
+  }
+  .pic2-bg {
+    top: 44vw;
+  }
+
+  #features__room-info--text {
+    top: 70vw;
+  }
+  #features__room-info--image {
+    top: 70vw !important ;
   }
   .question__title--font,
   .users__title--font {

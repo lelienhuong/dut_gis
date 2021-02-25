@@ -31,7 +31,6 @@ export default {
 </script>
 
 <style>
-
 .section--title {
   font-family: "Nunito Sans";
   font-size: 35px;
@@ -55,8 +54,18 @@ export default {
   .phone {
     width: 110%;
   }
-  * {
+  .users__students--description-summary,
+  .info_1,
+  .info_2,
+  .users h2,
+  .users__students--description-full {
     font-size: 18px !important;
+  }
+  .question__content--button-icon,
+  .question__content--button-icon2 {
+    font-size: 18px !important;
+    width: fit-content !important;
+    height: fit-content !important;    
   }
   .features__title--font p {
     font-size: 29px !important;
@@ -96,7 +105,13 @@ export default {
 }
 
 @media (max-width: 1199.98px) {
-  * {
+  .users__students--description-summary,
+  .info_1,
+  .info_2,
+  .users h2,
+  .users__students--description-full,
+  .question__content--button-icon,
+  .question__content--button-icon2 {
     font-size: 17px !important;
   }
   .features__title--wrapper {
@@ -159,7 +174,13 @@ export default {
   .users__students--image {
     background-color: transparent;
   }
-  * {
+  .users__students--description-summary,
+  .info_1,
+  .info_2,
+  .users h2,
+  .users__students--description-full,
+  .question__content--button-icon,
+  .question__content--button-icon2 {
     font-size: 17px !important;
   }
   .users h2 {
@@ -304,7 +325,8 @@ export default {
 
 @media (max-width: 767.98px) {
   .question__content--button,
-  .question__content--button2 {
+  .question__content--button2,
+  .question__content--button-icon2 {
     width: 18px;
     height: 18px;
   }
@@ -312,7 +334,12 @@ export default {
     width: 62vw;
     height: 33vw;
   }
-  *,
+  .users__students--description-summary,
+  .info_1,
+  .info_2,
+  .users h2,
+  .users__students--description-full,
+  .question__content--button-icon,
   .features h3 {
     font-size: 15px !important;
   }
@@ -444,8 +471,14 @@ export default {
   .footer__contact-item--icon {
     margin-right: 1vw;
   }
-  *,
-  .features h3 {
+  .users__students--description-summary,
+  .info_1,
+  .info_2,
+  .users h2,
+  .users__students--description-full,
+  .question__content--button-icon,
+  .features h3,
+  .question__content--button-icon2 {
     font-size: 12px !important;
   }
   .features__title--font p {
@@ -553,7 +586,13 @@ export default {
   .pic2-bg {
     left: 12%;
   }
-  * {
+  .users__students--description-summary,
+  .info_1,
+  .info_2,
+  .users h2,
+  .users__students--description-full,
+  .question__content--button-icon,
+  .question__content--button-icon2 {
     font-size: 10px !important;
   }
   .info_1 {
@@ -645,7 +684,13 @@ export default {
 }
 
 @media (max-width: 412px) {
-  * {
+  .users__students--description-summary,
+  .info_1,
+  .info_2,
+  .users h2,
+  .users__students--description-full,
+  .question__content--button-icon,
+  .question__content--button-icon2 {
     font-size: 9px !important;
   }
 }
@@ -657,7 +702,13 @@ export default {
     height: 12px;
     margin-right: 2vw;
   }
-  * {
+  .users__students--description-summary,
+  .info_1,
+  .info_2,
+  .users h2,
+  .users__students--description-full,
+  .question__content--button-icon,
+  .question__content--button-icon2 {
     font-size: 8px !important;
   }
   .clubs-content,

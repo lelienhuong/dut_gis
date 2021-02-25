@@ -1,7 +1,10 @@
 <template>
   <div>
     <button class="btn--common btn--navbar btn--navbar--slide" ripple="ripple">
-      Thử Ngay <em class="fas fa-download" style="padding-left: 12px"></em>
+      <slot></slot>
+      <slot></slot>
+       <em class="fas fa-download" style="padding-left: 12px"></em>
+      <slot></slot>
     </button>
   </div>
 </template>

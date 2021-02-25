@@ -254,7 +254,7 @@ export default {
   align-items: center;
 }
 .features__title--font h1 {
-  font-size: 35px !important;
+  font-size: 35px ;
   font-weight: 800;
   color: #0b66bf;
   margin: 0;

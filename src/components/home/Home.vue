@@ -64,8 +64,8 @@ export default {
   display: flex;
 }
 .home--content {
-  width: 45%;
-  padding: 100px 0px 0px 123px;
+  width: 50%;
+  padding: 100px 0px 0px 11%;
 }
 
 .home--title {
@@ -73,21 +73,16 @@ export default {
   line-height: 48px;
 }
 .home--title h1 {
-  font-size: 35px !important;
+  font-size: 35px;
   font-weight: 800;
-}
-.home--title span {
-  font-size: 35px !important;
 }
 
 .home--text {
-  width: 90%;
+  width: 100%;
+  font-size: 20px;
   line-height: 27px;
   margin-top: 50px;
   color: #626262;
-}
-.home--text p {
-  font-size: 20px !important;
 }
 
 .home--image {

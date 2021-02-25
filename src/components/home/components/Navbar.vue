@@ -4,13 +4,16 @@
       toggleable="lg"
       type="dark"
       variant="dark"
-      class="py-2 navbar--custom" 
+      class="py-2 navbar--custom"
     >
       <b-navbar-brand href="#" class="navbar--logo">
         <img src="../../../assets/logo-text.svg" alt="logo-text" />
       </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"       style="font-size:1.25rem !important"></b-navbar-toggle>
+      <b-navbar-toggle
+        target="nav-collapse"
+        style="font-size: 1.25rem !important"
+      ></b-navbar-toggle>
 
       <b-collapse class="ml_450" id="nav-collapse" is-nav>
         <b-navbar-nav class="navbar--underline navbar--text">
@@ -69,9 +72,9 @@ export default {
   border-color: rgb(61, 61, 105) !important;
 }
 
-
 .ml_450 {
   margin-left: 350px;
+  justify-content: center;
 }
 
 .navbar--wrapper {
@@ -84,7 +87,7 @@ export default {
   align-items: center;
 }
 .navbar--logo {
-  margin-left: 95px;
+  margin-left: 10%;
 }
 
 .navbar--custom {

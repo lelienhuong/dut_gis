@@ -54,7 +54,7 @@ export default {
   .phone {
     width: 110%;
   }
-  .users{
+  .users {
     height: 58vw;
   }
   /* * {
@@ -223,26 +223,30 @@ export default {
   .users__students--line {
     opacity: 0;
   }
+  .features {
+    background: transparent;
+    margin-top: 50px;
+    overflow-x: hidden;
+    height: 114vw;
+  }
   .info_1 {
     left: 10%;
     width: 41vw;
+    top: 0;
   }
   .info_2 {
     right: 10%;
     width: 41vw;
   }
-  .features {
-    background: transparent;
-    margin-top: 90px;
+  .pic1-bg{
+    top:0
   }
   .features__title--wrapper {
     height: 22vw;
     width: 58%;
     margin-left: 0px;
   }
-  .info_1 {
-    left: 13%;
-  }
+
   .features__title--font,
   .users__title--font {
     font-size: 25px !important;
@@ -349,8 +353,6 @@ export default {
     height: 18px;
   }
   .features {
-    /* margin-top: 0; */
-    overflow-x: hidden;
     height: 156vw;
   }
   .info_1 {
@@ -728,13 +730,16 @@ export default {
   }
   .footer__logo {
     width: 25vw;
+    left: 0;
   }
   .footer__link-sections {
     top: 32%;
-    left: 12vw;
+    left: 2vw;
   }
   .footer__form--wrapper {
-    top: 32%;
+    top: 37%;
+    margin-left: 0;
+    left: 40vw;
   }
   ::-moz-placeholder {
     font-size: 8px !important;
